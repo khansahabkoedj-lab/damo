@@ -1,0 +1,2440 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAHIM YAR KHAN TYRE CENTER | Imported Tyres &amp; Alloy Rims — Belgium Chowk</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            obsidian: '#090D16',
+            carbon: '#111827',
+            crimson: {
+              DEFAULT: '#E11D48',
+              dark: '#BE123C',
+              light: '#FFE4E6',
+            },
+            amberGold: '#F59E0B',
+          },
+          boxShadow: {
+            'card': '0 10px 30px -5px rgba(9, 13, 22, 0.06), 0 4px 12px -2px rgba(9, 13, 22, 0.04)',
+            'card-hover': '0 22px 45px -10px rgba(9, 13, 22, 0.14), 0 8px 20px -6px rgba(225, 29, 72, 0.12)',
+            'glow-crimson': '0 10px 25px -5px rgba(225, 29, 72, 0.45)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Base Typography & Tabular Numerals */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090D16;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E11D48;
+    }
+
+    /* IntersectionObserver Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Subtle Hero Technical Grid Overlay */
+    .hero-grid-pattern {
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+
+    /* Animated Performance Bar Fill */
+    .perf-bar-fill {
+      transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    /* Subtle Pulse Ring for Live Status */
+    @keyframes pulseRing {
+      0% { transform: scale(0.85); opacity: 0.9; }
+      70% { transform: scale(2.1); opacity: 0; }
+      100% { transform: scale(2.1); opacity: 0; }
+    }
+    .pulse-ring::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      background-color: inherit;
+      animation: pulseRing 2s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+    }
+
+    /* Gentle Shake for Booked Slot Feedback */
+    @keyframes gentleShake {
+      0%, 100% { transform: translateX(0); }
+      20%, 60% { transform: translateX(-5px); }
+      40%, 80% { transform: translateX(5px); }
+    }
+    .animate-shake {
+      animation: gentleShake 0.4s ease-in-out;
+    }
+
+    /* Slow Spin for Tyre Emblem */
+    @keyframes slowSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .spin-slow {
+      animation: slowSpin 28s linear infinite;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-crimson selection:text-white">
+
+  <!-- ===================================================================== -->
+  <!-- 1. STICKY GLASSMORPHIC NAVBAR                                         -->
+  <!-- ===================================================================== -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-40 transition-all duration-300 bg-obsidian/85 backdrop-blur-xl border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 gap-3">
+        
+        <!-- Brand Logo & SVG Wheel Emblem -->
+        <a href="#" class="flex items-center gap-3 group shrink-0">
+          <div class="relative w-11 h-11 rounded-2xl bg-gradient-to-br from-crimson to-rose-700 p-0.5 shadow-glow-crimson transition-transform duration-300 group-hover:scale-105">
+            <div class="w-full h-full bg-obsidian rounded-[14px] flex items-center justify-center">
+              <!-- Custom Precision Alloy Wheel SVG Emblem -->
+              <svg class="w-7 h-7 text-white transition-transform duration-700 group-hover:rotate-90" viewBox="0 0 36 36" fill="none">
+                <circle cx="18" cy="18" r="15" stroke="currentColor" stroke-width="2.5" />
+                <circle cx="18" cy="18" r="10.5" stroke="#E11D48" stroke-width="1.5" stroke-dasharray="3 2" />
+                <circle cx="18" cy="18" r="4" fill="#E11D48" />
+                <path d="M18 3V14M18 22V33M3 18H14M22 18H33M7.4 7.4L15.2 15.2M20.8 20.8L28.6 28.6M28.6 7.4L20.8 15.2M15.2 20.8L7.4 28.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </div>
+          </div>
+          <div>
+            <div class="font-heading font-extrabold text-white text-sm sm:text-base tracking-tight leading-none">
+              RAHIM YAR KHAN <span class="text-crimson">TYRE CENTER</span>
+            </div>
+            <div class="flex items-center gap-1.5 text-[11px] text-slate-400 font-medium mt-1">
+              <span class="inline-block w-1.5 h-1.5 rounded-full bg-amberGold"></span>
+              <span>Belgium Chowk • 6 Circular Rd, RYK</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
+          <a href="#tyre-finder" class="hover:text-white transition-colors">Tyre Finder</a>
+          <a href="#catalog" onclick="filterCatalog('all')" class="hover:text-white transition-colors">Imported Tyres</a>
+          <a href="#catalog" onclick="filterCatalog('Alloy Rims')" class="hover:text-white transition-colors">Alloy Rims</a>
+          <a href="#services" class="hover:text-white transition-colors">Workshop Services</a>
+          <a href="#reviews-location" class="hover:text-white transition-colors">Reviews &amp; Location</a>
+        </nav>
+
+        <!-- Right Controls: Live Backend Demo Pill + Book Slot CTA -->
+        <div class="flex items-center gap-2.5 sm:gap-3">
+          <!-- Interactive Backend Demo Toggle Pill -->
+          <button
+            id="backend-toggle-btn"
+            onclick="toggleAdminDrawer(true)"
+            title="Inspect Shop Owner Backend Dashboard"
+            class="relative flex items-center gap-2 px-3 sm:px-3.5 py-2 rounded-full bg-white/5 hover:bg-white/10 border border-emerald-500/35 text-xs font-semibold text-emerald-300 transition-all duration-200 hover:border-emerald-400"
+          >
+            <span class="relative flex h-2.5 w-2.5">
+              <span class="pulse-ring absolute inline-flex h-full w-full rounded-full bg-emerald-400"></span>
+              <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
+            </span>
+            <span class="hidden sm:inline">Live Backend Demo</span>
+            <span class="sm:hidden">Admin</span>
+            <span id="admin-badge-count" class="ml-0.5 px-1.5 py-0.2 bg-emerald-500/20 text-emerald-300 rounded-full text-[10px] font-bold tabular-nums">3</span>
+          </button>
+
+          <!-- Primary CTA: Book Slot -->
+          <button
+            onclick="openBookingModal(null)"
+            class="px-4 sm:px-5 py-2.5 rounded-xl bg-crimson hover:bg-crimson-dark text-white font-heading font-bold text-xs sm:text-sm shadow-glow-crimson transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 flex items-center gap-1.5"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Book Slot</span>
+          </button>
+
+          <!-- Mobile Hamburger -->
+          <button
+            onclick="toggleMobileMenu()"
+            class="lg:hidden p-2 rounded-xl bg-white/5 text-slate-300 hover:text-white hover:bg-white/10 transition-colors"
+            aria-label="Toggle Menu"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-obsidian/95 border-b border-white/10 px-4 pt-2 pb-5 space-y-2">
+      <a href="#tyre-finder" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">Tyre Size &amp; Car Finder</a>
+      <a href="#catalog" onclick="filterCatalog('all'); toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">Imported Tyres Stock</a>
+      <a href="#catalog" onclick="filterCatalog('Alloy Rims'); toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">Imported Alloy Rims</a>
+      <a href="#services" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">3D Alignment &amp; Services</a>
+      <a href="#reviews-location" onclick="toggleMobileMenu()" class="block px-3 py-2.5 rounded-xl text-sm font-medium text-slate-200 hover:bg-white/10">4.9★ Reviews &amp; Belgium Chowk Map</a>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- 2. HIGH-IMPACT HERO SECTION                                           -->
+  <!-- ===================================================================== -->
+  <section class="relative bg-obsidian text-white pt-28 pb-36 sm:pt-36 sm:pb-44 overflow-hidden">
+    <!-- High-Res Automotive Wheel & Caliper Background Image -->
+    <div class="absolute inset-0 z-0">
+      <img
+        src="https://images.unsplash.com/photo-1611821064430-0d40291d0f0b?auto=format&fit=crop&w=1920&q=85"
+        onerror="this.onerror=null; this.src='https://placehold.co/1920x1080/090D16/1E293B?text=RYK+Precision+Tyres';"
+        alt="Luxury Performance Alloy Wheel and Tyre"
+        class="w-full h-full object-cover object-center opacity-30 scale-105"
+      />
+      <!-- Deep Obsidian & Crimson Atmospheric Gradient Overlays -->
+      <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-obsidian/92 to-obsidian/70"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-transparent to-obsidian/80"></div>
+      <div class="absolute inset-0 hero-grid-pattern"></div>
+      <!-- Subtle Crimson Ambient Glow -->
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-crimson/20 rounded-full blur-3xl pointer-events-none"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Hero Copy & Trust Credentials -->
+        <div class="lg:col-span-8 space-y-6">
+          <!-- Google 4.9★ Trust Badge -->
+          <div class="inline-flex flex-wrap items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/15 text-xs sm:text-sm font-medium text-slate-100">
+            <span class="flex items-center gap-1 text-amberGold font-bold">
+              <span>4.9</span>
+              <svg class="w-4 h-4 fill-amberGold" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            </span>
+            <span class="text-white font-semibold">Rated on Google (218+ Verified RYK Reviews)</span>
+            <span class="hidden sm:inline text-slate-400">•</span>
+            <span class="text-emerald-400 font-semibold">Authorized Imported Tyre Dealer</span>
+          </div>
+
+          <!-- Bold Engineering Headline -->
+          <h1 class="font-heading font-extrabold text-3xl sm:text-5xl lg:text-[54px] tracking-tight leading-[1.1] text-white">
+            Precision Imported Tyres &amp; Alloy Rims in <span class="text-transparent bg-clip-text bg-gradient-to-r from-crimson via-rose-400 to-amberGold">Rahim Yar Khan</span>
+          </h1>
+
+          <!-- Subheadline -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed">
+            Visit our flagship fitment center at <strong class="text-white font-semibold">Belgium Chowk, 6 Circular Road</strong> for 100% genuine fresh-batch Yokohama, Michelin, Bridgestone &amp; Continental tyres, flow-formed alloy rims, 3D laser wheel alignment, and <span class="text-white font-semibold underline decoration-crimson decoration-2 underline-offset-4">30-minute express bay fitting</span>.
+          </p>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3.5 pt-1">
+            <a
+              href="#tyre-finder"
+              class="px-6 py-3.5 rounded-2xl bg-crimson hover:bg-crimson-dark text-white font-heading font-bold text-sm sm:text-base shadow-glow-crimson transition-all duration-200 hover:-translate-y-0.5 flex items-center gap-2"
+            >
+              <span>Find Your Exact Tyre Size</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/923000630870?text=Assalam-o-Alaikum%20Rahim%20Yar%20Khan%20Tyre%20Center!%20I%20would%20like%20to%20inquire%20about%20imported%20tyres%20/%20alloy%20rims."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="px-6 py-3.5 rounded-2xl bg-white/10 hover:bg-white/15 backdrop-blur-md border border-white/15 text-white font-heading font-semibold text-sm sm:text-base transition-all duration-200 flex items-center gap-2"
+            >
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+              <span>WhatsApp: +92 300 0630870</span>
+            </a>
+          </div>
+
+          <!-- Live Workshop Status Bar -->
+          <div class="pt-3">
+            <div class="inline-flex flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 rounded-2xl bg-slate-900/90 border border-white/10 backdrop-blur-md text-xs sm:text-sm">
+              <div class="flex items-center gap-2 font-semibold text-emerald-400">
+                <span class="relative flex h-2.5 w-2.5">
+                  <span class="pulse-ring absolute inline-flex h-full w-full rounded-full bg-emerald-400"></span>
+                  <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-400"></span>
+                </span>
+                <span>Bay 1: Available Now</span>
+              </div>
+              <span class="text-slate-600 hidden sm:inline">|</span>
+              <div class="flex items-center gap-1.5 text-amber-300 font-medium">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>Bay 2: Available at 11:30 AM</span>
+              </div>
+              <span class="text-slate-600 hidden md:inline">|</span>
+              <div class="text-slate-300 font-medium">
+                <span class="text-white font-semibold">Nitrogen &amp; Balancing Free</span> on 4-Tyre Sets
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Hero Telemetry & Trust Metric Cards -->
+        <div class="lg:col-span-4">
+          <div class="grid grid-cols-2 gap-3.5 sm:gap-4">
+            <div class="p-5 rounded-3xl bg-white/[0.06] backdrop-blur-xl border border-white/10 hover:border-crimson/50 transition-colors">
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400">Google Rating</div>
+              <div class="mt-2 flex items-baseline gap-1.5">
+                <span class="font-heading font-extrabold text-3xl sm:text-4xl text-white tabular-nums">4.9</span>
+                <span class="text-amberGold text-xl">★</span>
+              </div>
+              <div class="mt-1 text-xs text-slate-400">Highest in Rahim Yar Khan</div>
+            </div>
+
+            <div class="p-5 rounded-3xl bg-white/[0.06] backdrop-blur-xl border border-white/10 hover:border-crimson/50 transition-colors">
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400">Verified Reviews</div>
+              <div class="mt-2 font-heading font-extrabold text-3xl sm:text-4xl text-white tabular-nums">
+                <span class="counter" data-target="218">0</span>+
+              </div>
+              <div class="mt-1 text-xs text-emerald-400 font-medium">100% Genuine Customers</div>
+            </div>
+
+            <div class="p-5 rounded-3xl bg-white/[0.06] backdrop-blur-xl border border-white/10 hover:border-crimson/50 transition-colors">
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400">Express Fitment</div>
+              <div class="mt-2 font-heading font-extrabold text-3xl sm:text-4xl text-white tabular-nums">
+                <span class="counter" data-target="30">0</span><span class="text-lg font-bold text-crimson ml-1">min</span>
+              </div>
+              <div class="mt-1 text-xs text-slate-400">4 Tyres + Digital Balance</div>
+            </div>
+
+            <div class="p-5 rounded-3xl bg-white/[0.06] backdrop-blur-xl border border-white/10 hover:border-crimson/50 transition-colors">
+              <div class="text-xs font-semibold uppercase tracking-wider text-slate-400">Manufacturing</div>
+              <div class="mt-2 font-heading font-extrabold text-3xl sm:text-4xl text-white tabular-nums">
+                2026
+              </div>
+              <div class="mt-1 text-xs text-slate-400">Fresh DOT Import Batch</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 3. INTERACTIVE DUAL-MODE TYRE SIZE FINDER                             -->
+  <!-- ===================================================================== -->
+  <section id="tyre-finder" class="relative z-20 -mt-24 sm:-mt-28 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="bg-white rounded-3xl shadow-2xl border border-slate-200/80 overflow-hidden">
+        
+        <!-- Finder Header & Mode Switcher Tabs -->
+        <div class="bg-slate-900 px-5 sm:px-8 py-5 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <span class="text-[11px] font-bold uppercase tracking-widest text-crimson">Precision Fitment Engine</span>
+            <h2 class="font-heading font-bold text-xl sm:text-2xl text-white mt-0.5">Interactive Tyre &amp; Rim Finder</h2>
+          </div>
+
+          <!-- Dual-Mode Sliding Pill Switcher -->
+          <div class="inline-flex p-1.5 rounded-2xl bg-obsidian border border-white/10 self-start md:self-auto">
+            <button
+              id="tab-car-mode"
+              onclick="switchFinderMode('car')"
+              class="px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-heading font-bold transition-all duration-200 bg-crimson text-white shadow-md flex items-center gap-2"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"/></svg>
+              <span>Search by Car Model (Pakistan)</span>
+            </button>
+            <button
+              id="tab-size-mode"
+              onclick="switchFinderMode('size')"
+              class="px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-heading font-bold transition-all duration-200 text-slate-400 hover:text-white flex items-center gap-2"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg>
+              <span>Search by Tyre Size + Visualizer</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- MODE A: SEARCH BY CAR MODEL (PAKISTAN) -->
+        <div id="finder-panel-car" class="p-5 sm:p-8">
+          <div class="grid lg:grid-cols-12 gap-6 items-end">
+            
+            <!-- Step 1: Select Car Make & Model -->
+            <div class="lg:col-span-4">
+              <label for="car-model-select" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
+                1. Select Vehicle Make &amp; Model
+              </label>
+              <div class="relative">
+                <select
+                  id="car-model-select"
+                  onchange="handleCarModelChange()"
+                  class="w-full appearance-none rounded-2xl border-2 border-slate-200 bg-slate-50 hover:border-slate-300 focus:border-crimson focus:bg-white px-4 py-3.5 pr-10 text-sm sm:text-base font-semibold text-slate-900 outline-none transition-all cursor-pointer"
+                >
+                  <option value="corolla">Toyota Corolla (Grande / Altis / GLi)</option>
+                  <option value="civic">Honda Civic (RS Turbo / Oriel / Rebirth)</option>
+                  <option value="alto">Suzuki Alto (VXR / VXL AGS / Japanese)</option>
+                  <option value="fortuner">Toyota Fortuner / Hilux Revo (4x4 / Rocco)</option>
+                  <option value="sportage">Kia Sportage / Hyundai Tucson (AWD / FWD)</option>
+                  <option value="swift">Suzuki Cultus / Swift (GLX / VXL)</option>
+                  <option value="mghs">MG HS / Changan Alsvin (Lumiere / Trophy)</option>
+                </select>
+                <svg class="w-5 h-5 text-slate-500 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+
+            <!-- Step 2: Select Variant / Year -->
+            <div class="lg:col-span-4">
+              <label for="car-variant-select" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">
+                2. Select Variant &amp; Model Year
+              </label>
+              <div class="relative">
+                <select
+                  id="car-variant-select"
+                  onchange="handleCarVariantChange()"
+                  class="w-full appearance-none rounded-2xl border-2 border-slate-200 bg-slate-50 hover:border-slate-300 focus:border-crimson focus:bg-white px-4 py-3.5 pr-10 text-sm sm:text-base font-semibold text-slate-900 outline-none transition-all cursor-pointer"
+                >
+                  <!-- Populated dynamically via JS -->
+                </select>
+                <svg class="w-5 h-5 text-slate-500 absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/></svg>
+              </div>
+            </div>
+
+            <!-- Step 3: Action Button -->
+            <div class="lg:col-span-4">
+              <button
+                onclick="applyVehicleFilterAndScroll()"
+                class="w-full py-3.5 px-6 rounded-2xl bg-obsidian hover:bg-slate-800 text-white font-heading font-bold text-sm sm:text-base transition-all duration-200 shadow-lg hover:shadow-xl flex items-center justify-center gap-2.5 group"
+              >
+                <span>Show Matching Tyres &amp; Rims</span>
+                <svg class="w-4 h-4 text-crimson transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- OEM Specification Live Result Strip -->
+          <div class="mt-6 p-4 sm:p-5 rounded-2xl bg-slate-50 border border-slate-200/90 flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div class="flex flex-wrap items-center gap-4 sm:gap-6">
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Factory OEM Tyre Size</div>
+                <div id="oem-size-display" class="font-heading font-extrabold text-xl sm:text-2xl text-crimson tabular-nums mt-0.5">205/55 R16</div>
+              </div>
+              <div class="h-9 w-px bg-slate-200 hidden sm:block"></div>
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Recommended PSI</div>
+                <div id="oem-psi-display" class="font-semibold text-sm sm:text-base text-slate-800 tabular-nums mt-0.5">32 PSI Front / 32 PSI Rear</div>
+              </div>
+              <div class="h-9 w-px bg-slate-200 hidden sm:block"></div>
+              <div>
+                <div class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Rim PCD &amp; Upgrade</div>
+                <div id="oem-pcd-display" class="font-semibold text-sm sm:text-base text-slate-800 mt-0.5">5x114.3 • Upsize: 215/50 R17</div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 px-3.5 py-2 rounded-xl self-start md:self-center">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              <span id="oem-stock-note">In Stock at Belgium Chowk RYK</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MODE B: SEARCH BY TYRE SIZE + INTERACTIVE SIDEWALL VISUALIZER -->
+        <div id="finder-panel-size" class="hidden p-5 sm:p-8">
+          <div class="grid lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left Dropdown Selectors -->
+            <div class="lg:col-span-6 space-y-5">
+              <div>
+                <h3 class="font-heading font-bold text-lg text-slate-900">Read Your Tyre Sidewall Numbers</h3>
+                <p class="text-xs sm:text-sm text-slate-500 mt-1">Select Width, Aspect Ratio (Profile), and Rim Diameter to visualize exact dimensions and filter live stock.</p>
+              </div>
+
+              <div class="grid grid-cols-3 gap-3 sm:gap-4">
+                <!-- Width -->
+                <div>
+                  <label for="size-width" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Width (mm)</label>
+                  <select
+                    id="size-width"
+                    onchange="updateSidewallVisualizer()"
+                    class="w-full rounded-2xl border-2 border-slate-200 bg-slate-50 focus:border-crimson focus:bg-white px-3.5 py-3 text-sm sm:text-base font-bold text-slate-900 tabular-nums outline-none cursor-pointer"
+                  >
+                    <option value="145">145</option>
+                    <option value="165">165</option>
+                    <option value="185">185</option>
+                    <option value="195">195</option>
+                    <option value="205" selected>205</option>
+                    <option value="215">215</option>
+                    <option value="225">225</option>
+                    <option value="265">265</option>
+                  </select>
+                </div>
+
+                <!-- Profile / Aspect Ratio -->
+                <div>
+                  <label for="size-profile" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Profile (%)</label>
+                  <select
+                    id="size-profile"
+                    onchange="updateSidewallVisualizer()"
+                    class="w-full rounded-2xl border-2 border-slate-200 bg-slate-50 focus:border-crimson focus:bg-white px-3.5 py-3 text-sm sm:text-base font-bold text-slate-900 tabular-nums outline-none cursor-pointer"
+                  >
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55" selected>55</option>
+                    <option value="60">60</option>
+                    <option value="65">65</option>
+                    <option value="70">70</option>
+                    <option value="80">80</option>
+                  </select>
+                </div>
+
+                <!-- Rim Diameter -->
+                <div>
+                  <label for="size-rim" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Rim (in)</label>
+                  <select
+                    id="size-rim"
+                    onchange="updateSidewallVisualizer()"
+                    class="w-full rounded-2xl border-2 border-slate-200 bg-slate-50 focus:border-crimson focus:bg-white px-3.5 py-3 text-sm sm:text-base font-bold text-slate-900 tabular-nums outline-none cursor-pointer"
+                  >
+                    <option value="13">R13</option>
+                    <option value="14">R14</option>
+                    <option value="15">R15</option>
+                    <option value="16" selected>R16</option>
+                    <option value="17">R17</option>
+                    <option value="18">R18</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Live Computed Engineering Telemetry Pills -->
+              <div class="grid grid-cols-3 gap-3 p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+                <div>
+                  <div class="text-[11px] font-semibold text-slate-400">Section Width</div>
+                  <div id="vis-stat-width" class="font-heading font-bold text-sm sm:text-base text-slate-900 tabular-nums mt-0.5">205 mm</div>
+                </div>
+                <div class="border-x border-slate-200">
+                  <div class="text-[11px] font-semibold text-slate-400">Sidewall Height</div>
+                  <div id="vis-stat-sidewall" class="font-heading font-bold text-sm sm:text-base text-crimson tabular-nums mt-0.5">113 mm</div>
+                </div>
+                <div>
+                  <div class="text-[11px] font-semibold text-slate-400">Overall Diameter</div>
+                  <div id="vis-stat-diameter" class="font-heading font-bold text-sm sm:text-base text-slate-900 tabular-nums mt-0.5">632 mm</div>
+                </div>
+              </div>
+
+              <button
+                onclick="applySizeFilterAndScroll()"
+                class="w-full py-3.5 px-6 rounded-2xl bg-crimson hover:bg-crimson-dark text-white font-heading font-bold text-sm sm:text-base shadow-glow-crimson transition-all duration-200 flex items-center justify-center gap-2"
+              >
+                <span id="size-search-btn-label">Search 205/55 R16 in RYK Stock</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+              </button>
+            </div>
+
+            <!-- Right Interactive Technical SVG Sidewall & Cross-Section Diagram -->
+            <div class="lg:col-span-6">
+              <div class="relative rounded-3xl bg-obsidian p-5 sm:p-6 text-white border border-slate-800 shadow-inner overflow-hidden">
+                <div class="flex items-center justify-between mb-2">
+                  <span class="text-[11px] font-bold uppercase tracking-widest text-amberGold">Live Sidewall Blueprint</span>
+                  <span id="vis-badge-code" class="px-2.5 py-1 rounded-lg bg-crimson/20 border border-crimson/40 text-xs font-mono font-bold text-rose-300 tabular-nums">205/55 R16 91V</span>
+                </div>
+
+                <!-- Dynamic SVG Tyre Wheel + Technical Dimension Callouts -->
+                <svg id="tyre-visualizer-svg" viewBox="0 0 460 235" class="w-full h-auto select-none">
+                  <defs>
+                    <radialGradient id="tyreRubberGrad" cx="50%" cy="50%" r="50%">
+                      <stop offset="52%" stop-color="#1E293B" />
+                      <stop offset="78%" stop-color="#0F172A" />
+                      <stop offset="94%" stop-color="#1E293B" />
+                      <stop offset="100%" stop-color="#090D16" />
+                    </radialGradient>
+                    <radialGradient id="alloyRimGrad" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#94A3B8" />
+                      <stop offset="65%" stop-color="#475569" />
+                      <stop offset="100%" stop-color="#CBD5E1" />
+                    </radialGradient>
+                    <!-- Curved Path for Sidewall Marking -->
+                    <path id="sidewallTextArc" d="M 48,118 A 77,77 0 1,1 202,118" />
+                  </defs>
+
+                  <!-- Subtle Engineering Grid Background -->
+                  <g stroke="#1E293B" stroke-width="0.75">
+                    <line x1="0" y1="40" x2="460" y2="40" />
+                    <line x1="0" y1="118" x2="460" y2="118" stroke-dasharray="4 4" />
+                    <line x1="0" y1="196" x2="460" y2="196" />
+                  </g>
+
+                  <!-- LEFT: Front-Facing Tyre & Alloy Rim with Curved Sidewall Text -->
+                  <g transform="translate(0, 0)">
+                    <!-- Outer Tyre Rubber -->
+                    <circle id="svg-tyre-outer" cx="125" cy="118" r="95" fill="url(#tyreRubberGrad)" stroke="#334155" stroke-width="2" />
+                    <!-- Subtle Tread Grooves -->
+                    <circle cx="125" cy="118" r="89" fill="none" stroke="#090D16" stroke-width="2" stroke-dasharray="6 4" />
+                    <!-- Dynamic Inner Alloy Rim Circle -->
+                    <circle id="svg-rim-circle" cx="125" cy="118" r="56" fill="url(#alloyRimGrad)" stroke="#E2E8F0" stroke-width="2" />
+                    <circle id="svg-rim-inner" cx="125" cy="118" r="48" fill="#0F172A" />
+                    <!-- 5 Twin Alloy Spokes -->
+                    <g stroke="#CBD5E1" stroke-width="3.2" stroke-linecap="round">
+                      <line x1="125" y1="70" x2="125" y2="166" />
+                      <line x1="79" y1="103" x2="171" y2="133" />
+                      <line x1="97" y1="157" x2="153" y2="79" />
+                    </g>
+                    <!-- Center Cap -->
+                    <circle cx="125" cy="118" r="13" fill="#E11D48" stroke="#FFFFFF" stroke-width="1.5" />
+                    <text x="125" y="121" text-anchor="middle" fill="#FFFFFF" font-size="7.5" font-weight="800" font-family="Plus Jakarta Sans">RYK</text>
+
+                    <!-- Dynamic Curved Sidewall Specification Print -->
+                    <text fill="#F8FAFC" font-size="11.5" font-weight="800" letter-spacing="1.4" font-family="Plus Jakarta Sans">
+                      <textPath id="svg-sidewall-text" href="#sidewallTextArc" startOffset="50%" text-anchor="middle">
+                        205/55 R16 91V
+                      </textPath>
+                    </text>
+
+                    <!-- Rim Diameter Callout Arrow -->
+                    <line x1="125" y1="64" x2="125" y2="172" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="3 2" />
+                    <rect x="94" y="138" width="62" height="17" rx="4" fill="#090D16" stroke="#F59E0B" stroke-width="1" />
+                    <text id="svg-rim-label" x="125" y="149" text-anchor="middle" fill="#F59E0B" font-size="9" font-weight="700">RIM: 16"</text>
+                  </g>
+
+                  <!-- RIGHT: Cross-Section Tread Width & Sidewall Height Caliper -->
+                  <g transform="translate(268, 22)">
+                    <!-- Cross-Section Tyre Profile Shape -->
+                    <rect id="svg-cross-tyre" x="28" y="12" width="96" height="168" rx="18" fill="#1E293B" stroke="#475569" stroke-width="2" />
+                    <!-- Tread Pattern Blocks -->
+                    <line x1="52" y1="12" x2="52" y2="180" stroke="#090D16" stroke-width="3" />
+                    <line x1="76" y1="12" x2="76" y2="180" stroke="#090D16" stroke-width="3" />
+                    <line x1="100" y1="12" x2="100" y2="180" stroke="#090D16" stroke-width="3" />
+                    <!-- Cross-Section Alloy Barrel -->
+                    <rect id="svg-cross-rim" x="35" y="48" width="82" height="96" rx="6" fill="#334155" stroke="#94A3B8" stroke-width="1.5" />
+
+                    <!-- Top Width Callout Dimension -->
+                    <line x1="28" y1="3" x2="124" y2="3" stroke="#38BDF8" stroke-width="1.5" />
+                    <line x1="28" y1="0" x2="28" y2="8" stroke="#38BDF8" stroke-width="1.5" />
+                    <line x1="124" y1="0" x2="124" y2="8" stroke="#38BDF8" stroke-width="1.5" />
+                    <text id="svg-width-label" x="76" y="-2" text-anchor="middle" fill="#38BDF8" font-size="9.5" font-weight="700">WIDTH: 205mm</text>
+
+                    <!-- Sidewall Height Callout Dimension -->
+                    <line x1="138" y1="12" x2="138" y2="48" stroke="#E11D48" stroke-width="2" />
+                    <line x1="133" y1="12" x2="143" y2="12" stroke="#E11D48" stroke-width="1.5" />
+                    <line x1="133" y1="48" x2="143" y2="48" stroke="#E11D48" stroke-width="1.5" />
+                    <text id="svg-profile-label" x="146" y="28" fill="#FB7185" font-size="9" font-weight="700">PROFILE: 55%</text>
+                    <text id="svg-sidewall-mm-label" x="146" y="40" fill="#94A3B8" font-size="8.5" font-weight="600">(113 mm)</text>
+
+                    <!-- Legend Note -->
+                    <text x="76" y="196" text-anchor="middle" fill="#64748B" font-size="8.5" font-weight="600">CROSS-SECTION TELEMETRY</text>
+                  </g>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 4. LIVE IMPORTED TYRE & ALLOY RIM CATALOG (FILTERABLE)                -->
+  <!-- ===================================================================== -->
+  <section id="catalog" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Heading & Search Bar -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8 reveal">
+        <div>
+          <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-crimson mb-2">
+            <span class="w-2 h-2 rounded-full bg-crimson"></span>
+            <span>Live Belgium Chowk Store Inventory</span>
+          </div>
+          <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-slate-900 tracking-tight">
+            Imported Tyres &amp; Flow-Formed Alloy Rims
+          </h2>
+          <p class="text-sm sm:text-base text-slate-600 mt-1.5 max-w-2xl">
+            Every tyre includes a fresh 2026 DOT manufacturing stamp, manufacturer warranty, and free computerized balancing + pure nitrogen on sets of 4.
+          </p>
+        </div>
+
+        <!-- Quick Search Input -->
+        <div class="relative w-full lg:w-80">
+          <input
+            id="catalog-search-input"
+            type="text"
+            oninput="handleSearchInput()"
+            placeholder="Search size (205/55), brand, or rim..."
+            class="w-full pl-10 pr-4 py-3 rounded-2xl border border-slate-200 bg-white text-sm font-medium text-slate-900 placeholder-slate-400 focus:border-crimson focus:ring-2 focus:ring-crimson/15 outline-none transition-all shadow-sm"
+          />
+          <svg class="w-4 h-4 text-slate-400 absolute left-3.5 top-1/2 -translate-y-1/2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Brand & Category Filter Pills -->
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-6 reveal">
+        <div id="brand-filter-pills" class="flex flex-wrap items-center gap-2">
+          <button onclick="filterCatalog('all')" data-filter="all" class="filter-pill active px-4 py-2 rounded-xl text-xs sm:text-sm font-heading font-bold bg-obsidian text-white shadow-sm transition-all">
+            All Stock (9)
+          </button>
+          <button onclick="filterCatalog('Yokohama')" data-filter="Yokohama" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-heading font-semibold bg-white text-slate-700 border border-slate-200 hover:border-slate-300 transition-all">
+            Yokohama
+          </button>
+          <button onclick="filterCatalog('Michelin')" data-filter="Michelin" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-heading font-semibold bg-white text-slate-700 border border-slate-200 hover:border-slate-300 transition-all">
+            Michelin
+          </button>
+          <button onclick="filterCatalog('Bridgestone')" data-filter="Bridgestone" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-heading font-semibold bg-white text-slate-700 border border-slate-200 hover:border-slate-300 transition-all">
+            Bridgestone
+          </button>
+          <button onclick="filterCatalog('Dunlop')" data-filter="Dunlop" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-heading font-semibold bg-white text-slate-700 border border-slate-200 hover:border-slate-300 transition-all">
+            Dunlop
+          </button>
+          <button onclick="filterCatalog('Continental')" data-filter="Continental" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-heading font-semibold bg-white text-slate-700 border border-slate-200 hover:border-slate-300 transition-all">
+            Continental
+          </button>
+          <button onclick="filterCatalog('Alloy Rims')" data-filter="Alloy Rims" class="filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-heading font-semibold bg-white text-slate-700 border border-slate-200 hover:border-crimson transition-all flex items-center gap-1.5">
+            <span class="w-2 h-2 rounded-full bg-amberGold"></span>
+            <span>Imported Alloy Rims</span>
+          </button>
+        </div>
+
+        <!-- Active Filter Banner / Reset Button -->
+        <div id="active-filter-banner" class="hidden items-center gap-2.5 px-3.5 py-2 rounded-xl bg-crimson-light/60 border border-crimson/25 text-xs font-semibold text-crimson-dark">
+          <span id="active-filter-text">Showing matches for 205/55 R16</span>
+          <button onclick="resetAllFilters()" class="underline font-bold hover:text-obsidian">Reset</button>
+        </div>
+      </div>
+
+      <!-- Product Grid -->
+      <div id="product-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
+        <!-- Populated dynamically via JS for instant reactivity & stock sync -->
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 5. PRECISION WORKSHOP SERVICES                                        -->
+  <!-- ===================================================================== -->
+  <section id="services" class="py-16 sm:py-24 bg-obsidian text-white px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+    <div class="absolute inset-0 hero-grid-pattern opacity-60"></div>
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="max-w-2xl mb-12 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-crimson">Belgium Chowk Fitment Center</span>
+        <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-white mt-2">
+          Computerized Calibration &amp; Workshop Services
+        </h2>
+        <p class="text-sm sm:text-base text-slate-400 mt-2">
+          Equipped with modern 3D laser alignment racks, touchless tyre changers, and digital road-force balancers to protect your alloy rims from scratches.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Service 1 -->
+        <div class="reveal p-6 rounded-3xl bg-white/[0.04] border border-white/10 hover:border-crimson/50 transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-crimson/15 border border-crimson/30 flex items-center justify-center text-crimson mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+          </div>
+          <div class="text-xs font-bold text-amberGold uppercase tracking-wider">Rs. 2,500 • 20 Mins</div>
+          <h3 class="font-heading font-bold text-lg text-white mt-1">3D Computerized Wheel Alignment</h3>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 leading-relaxed">
+            4-camera laser camber, caster, and toe calibration calibrated to OEM factory specs for zero steering pull on N-5 highway.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="reveal p-6 rounded-3xl bg-white/[0.04] border border-white/10 hover:border-crimson/50 transition-all duration-300 group" style="transition-delay: 80ms;">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" stroke-linejoin="round" d="M12 7v5l3 3"/></svg>
+          </div>
+          <div class="text-xs font-bold text-emerald-400 uppercase tracking-wider">FREE with 4 Tyres</div>
+          <h3 class="font-heading font-bold text-lg text-white mt-1">Digital Road-Force Balancing</h3>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 leading-relaxed">
+            Pinpoint adhesive weight placement inside alloy barrels for vibration-free high-speed cruising at 120+ km/h.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="reveal p-6 rounded-3xl bg-white/[0.04] border border-white/10 hover:border-crimson/50 transition-all duration-300 group" style="transition-delay: 160ms;">
+          <div class="w-12 h-12 rounded-2xl bg-amberGold/15 border border-amberGold/30 flex items-center justify-center text-amberGold mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+          </div>
+          <div class="text-xs font-bold text-amberGold uppercase tracking-wider">Precision Fitment</div>
+          <h3 class="font-heading font-bold text-lg text-white mt-1">Imported Alloy Rims &amp; Fitment</h3>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 leading-relaxed">
+            Touchless polymer-head mounting, hub-centric rings, chrome lug nuts, and calibrated torque-wrench tightening.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="reveal p-6 rounded-3xl bg-white/[0.04] border border-white/10 hover:border-crimson/50 transition-all duration-300 group" style="transition-delay: 240ms;">
+          <div class="w-12 h-12 rounded-2xl bg-sky-500/15 border border-sky-500/30 flex items-center justify-center text-sky-400 mb-5 group-hover:scale-110 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <div class="text-xs font-bold text-sky-400 uppercase tracking-wider">99.5% Pure N2</div>
+          <h3 class="font-heading font-bold text-lg text-white mt-1">Nitrogen &amp; Tubeless Repair</h3>
+          <p class="text-xs sm:text-sm text-slate-400 mt-2 leading-relaxed">
+            Cooler running temperatures during Rahim Yar Khan summers, longer tread life, and permanent internal mushroom patches.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 6. VERIFIED GOOGLE REVIEWS & BELGIUM CHOWK LOCATION                   -->
+  <!-- ===================================================================== -->
+  <section id="reviews-location" class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-slate-50">
+    <div class="max-w-7xl mx-auto space-y-16">
+      
+      <!-- Verified 4.9★ Reviews Section -->
+      <div>
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 reveal">
+          <div>
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold mb-2">
+              <span>4.9 ★ Google Business Profile</span>
+              <span>•</span>
+              <span>218+ Verified Reviews</span>
+            </div>
+            <h2 class="font-heading font-extrabold text-2xl sm:text-4xl text-slate-900">
+              Trusted by Car Owners Across Rahim Yar Khan
+            </h2>
+          </div>
+          <div class="text-sm text-slate-600 font-medium">
+            Rated #1 for Genuine Imported Tyres &amp; Honest Pricing on Circular Road
+          </div>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <!-- Review 1 -->
+          <div class="reveal p-6 rounded-3xl bg-white border border-slate-200/80 shadow-card">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-1 text-amberGold text-sm">★★★★★</div>
+              <span class="text-[11px] font-semibold text-slate-400">Google Verified</span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              "Bought a fresh set of 4 Yokohama BluEarth-GT tyres for my Corolla Grande. They showed me the 2026 manufacturing date stamp before fitting, and the 3D alignment at Belgium Chowk made the drive super smooth."
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-obsidian text-white font-heading font-bold text-xs flex items-center justify-center">MA</div>
+              <div>
+                <div class="text-xs font-bold text-slate-900">Muhammad Awais</div>
+                <div class="text-[11px] text-slate-500">Toyota Corolla Grande • Model Town, RYK</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="reveal p-6 rounded-3xl bg-white border border-slate-200/80 shadow-card" style="transition-delay: 100ms;">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-1 text-amberGold text-sm">★★★★★</div>
+              <span class="text-[11px] font-semibold text-slate-400">Google Verified</span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              "Best alloy rim collection in Rahim Yar Khan! Upgraded my Honda Civic RS with 17-inch flow-formed gunmetal rims and Michelin Primacy 4 tyres. Touchless machine didn't leave a single mark."
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-crimson text-white font-heading font-bold text-xs flex items-center justify-center">ZF</div>
+              <div>
+                <div class="text-xs font-bold text-slate-900">Zain Farooq</div>
+                <div class="text-[11px] text-slate-500">Honda Civic RS • Gulshan-e-Iqbal, RYK</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="reveal p-6 rounded-3xl bg-white border border-slate-200/80 shadow-card" style="transition-delay: 200ms;">
+            <div class="flex items-center justify-between mb-3">
+              <div class="flex items-center gap-1 text-amberGold text-sm">★★★★★</div>
+              <span class="text-[11px] font-semibold text-slate-400">Google Verified</span>
+            </div>
+            <p class="text-sm text-slate-700 leading-relaxed">
+              "Replaced all 4 tyres on my Fortuner before a trip to Multan. Fair market price, genuine Bridgestone Dueler stock, free nitrogen fill, and very polite staff right at Belgium Chowk."
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 flex items-center gap-3">
+              <div class="w-9 h-9 rounded-full bg-slate-800 text-white font-heading font-bold text-xs flex items-center justify-center">HT</div>
+              <div>
+                <div class="text-xs font-bold text-slate-900">Haji Tariq Mahmood</div>
+                <div class="text-[11px] text-slate-500">Toyota Fortuner • Satellite Town, RYK</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Location & Direct Contact Footer Card -->
+      <div class="reveal rounded-3xl bg-white border border-slate-200 shadow-xl overflow-hidden">
+        <div class="grid lg:grid-cols-12">
+          
+          <!-- Left Workshop Info & Direct Action CTAs -->
+          <div class="lg:col-span-6 p-6 sm:p-10 flex flex-col justify-between space-y-6">
+            <div>
+              <span class="text-xs font-bold uppercase tracking-widest text-crimson">Visit Our Showroom &amp; Bays</span>
+              <h3 class="font-heading font-extrabold text-2xl sm:text-3xl text-slate-900 mt-1">
+                RAHIM YAR KHAN TYRE CENTER
+              </h3>
+              <p class="text-sm text-slate-600 mt-2">
+                Conveniently located at the main roundabout hub of Rahim Yar Khan with wide drive-in fitting bays for sedans, hatchbacks, and 4x4 SUVs.
+              </p>
+
+              <div class="mt-6 space-y-4">
+                <div class="flex items-start gap-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-crimson/10 text-crimson flex items-center justify-center shrink-0 mt-0.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Workshop Address</div>
+                    <div class="text-sm sm:text-base font-bold text-slate-900">Belgium Chowk, 6 Circular Road, Rahim Yar Khan, Punjab</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Phone &amp; WhatsApp Desk</div>
+                    <div class="text-sm sm:text-base font-bold text-slate-900 tabular-nums">+92 300 0630870</div>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-3.5">
+                  <div class="w-10 h-10 rounded-xl bg-amberGold/15 text-amber-700 flex items-center justify-center shrink-0 mt-0.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </div>
+                  <div>
+                    <div class="text-xs font-bold uppercase tracking-wider text-slate-400">Operating Hours</div>
+                    <div class="text-sm sm:text-base font-bold text-slate-900">9:30 AM – 10:00 PM <span class="text-emerald-600 font-semibold">(Open 7 Days)</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Direct Call & WhatsApp Buttons -->
+            <div class="flex flex-wrap gap-3 pt-2">
+              <a
+                href="tel:+923000630870"
+                class="flex-1 min-w-[160px] py-3.5 px-5 rounded-2xl bg-obsidian hover:bg-slate-800 text-white font-heading font-bold text-sm text-center transition-all flex items-center justify-center gap-2"
+              >
+                <svg class="w-4 h-4 text-crimson" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                <span>Call Now</span>
+              </a>
+              <a
+                href="https://wa.me/923000630870?text=Assalam-o-Alaikum%20Rahim%20Yar%20Khan%20Tyre%20Center!%20Please%20share%20location%20and%20tyre%20availability."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 min-w-[180px] py-3.5 px-5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-sm text-center transition-all flex items-center justify-center gap-2 shadow-md"
+              >
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Styled Architectural Belgium Chowk Map Card -->
+          <div class="lg:col-span-6 bg-obsidian relative min-h-[320px] p-6 sm:p-8 flex flex-col justify-between text-white overflow-hidden">
+            <div class="absolute inset-0 hero-grid-pattern opacity-80"></div>
+            <!-- Stylized Circular Road & Belgium Chowk Vector Map -->
+            <svg viewBox="0 0 400 280" class="absolute inset-0 w-full h-full opacity-45 pointer-events-none">
+              <circle cx="200" cy="140" r="105" fill="none" stroke="#334155" stroke-width="14" />
+              <circle cx="200" cy="140" r="105" fill="none" stroke="#64748B" stroke-width="1.5" stroke-dasharray="6 6" />
+              <circle cx="200" cy="140" r="34" fill="#1E293B" stroke="#E11D48" stroke-width="2.5" />
+              <line x1="0" y1="140" x2="400" y2="140" stroke="#334155" stroke-width="12" />
+              <line x1="200" y1="0" x2="200" y2="280" stroke="#334155" stroke-width="12" />
+              <text x="200" y="143" text-anchor="middle" fill="#F8FAFC" font-size="8" font-weight="800">BELGIUM CHOWK</text>
+              <text x="315" y="132" fill="#94A3B8" font-size="8" font-weight="700">6 CIRCULAR ROAD</text>
+            </svg>
+
+            <div class="relative z-10 flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-xs font-semibold text-slate-200 border border-white/15">
+                Rahim Yar Khan, Punjab
+              </span>
+              <span class="px-3 py-1 rounded-full bg-crimson text-white text-xs font-bold shadow-glow-crimson">
+                Pin: Belgium Chowk
+              </span>
+            </div>
+
+            <!-- Floating Map Pin Card -->
+            <div class="relative z-10 my-auto mx-auto max-w-xs w-full p-4 rounded-2xl bg-slate-900/95 backdrop-blur-xl border border-white/15 shadow-2xl text-center">
+              <div class="w-10 h-10 rounded-full bg-crimson text-white flex items-center justify-center mx-auto mb-2 shadow-glow-crimson">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div class="font-heading font-bold text-sm text-white">Belgium Chowk, 6 Circular Rd</div>
+              <div class="text-xs text-slate-400 mt-0.5">4.9 ★ (218+ Reviews) • Easy Parking</div>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Belgium+Chowk+6+Circular+Road+Rahim+Yar+Khan"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-3 inline-flex items-center justify-center gap-1.5 w-full py-2 px-4 rounded-xl bg-white text-obsidian hover:bg-slate-100 font-heading font-bold text-xs transition-colors"
+              >
+                <span>Open Directions in Google Maps</span>
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+              </a>
+            </div>
+
+            <div class="relative z-10 text-[11px] text-slate-400 text-center">
+              Landmarks: Main Belgium Chowk Roundabout • 6 Circular Road Commercial Belt
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER WITH HAXEN AGENCY ATTRIBUTION                                  -->
+  <!-- ===================================================================== -->
+  <footer class="bg-obsidian text-slate-400 border-t border-white/10 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+      <div>
+        © 2026 <strong class="text-white">RAHIM YAR KHAN TYRE CENTER</strong> • Belgium Chowk, 6 Circular Road, RYK. All Rights Reserved.
+      </div>
+      <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/5 border border-white/10 text-slate-300">
+        <span class="w-2 h-2 rounded-full bg-crimson"></span>
+        <span>Interactive Web App Concept crafted by <strong class="text-white font-heading">HAXEN</strong></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- INTERACTIVE FITTING SLOT & BAY RESERVATION MODAL                      -->
+  <!-- ===================================================================== -->
+  <div id="booking-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-5 bg-obsidian/80 backdrop-blur-md overflow-y-auto">
+    <div class="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl border border-slate-200 overflow-hidden my-auto">
+      
+      <!-- Modal Top Header -->
+      <div class="bg-obsidian px-6 py-4 flex items-center justify-between text-white">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-widest text-crimson">Belgium Chowk Express Bay</span>
+          <h3 class="font-heading font-bold text-lg sm:text-xl">Reserve Fitting Slot</h3>
+        </div>
+        <button onclick="closeBookingModal()" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white transition-colors" aria-label="Close Modal">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Step Progress Bar (Hidden on Confirmation Screen) -->
+      <div id="booking-steps-bar" class="bg-slate-50 px-6 py-3 border-b border-slate-200 flex items-center justify-between text-xs font-bold">
+        <div id="step-indicator-1" class="flex items-center gap-2 text-crimson">
+          <span class="w-6 h-6 rounded-full bg-crimson text-white flex items-center justify-center text-[11px]">1</span>
+          <span>Tyre &amp; Add-ons</span>
+        </div>
+        <div class="h-px flex-1 bg-slate-200 mx-3"></div>
+        <div id="step-indicator-2" class="flex items-center gap-2 text-slate-400">
+          <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-[11px]">2</span>
+          <span>Date &amp; Bay Time</span>
+        </div>
+        <div class="h-px flex-1 bg-slate-200 mx-3"></div>
+        <div id="step-indicator-3" class="flex items-center gap-2 text-slate-400">
+          <span class="w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-[11px]">3</span>
+          <span>Vehicle &amp; Confirm</span>
+        </div>
+      </div>
+
+      <!-- Inline Validation Toast Inside Modal -->
+      <div id="modal-inline-alert" class="hidden mx-6 mt-4 px-4 py-2.5 rounded-xl bg-rose-50 border border-rose-200 text-xs font-semibold text-rose-700"></div>
+
+      <!-- STEP 1: PRODUCT, QUANTITY & WORKSHOP ADD-ONS -->
+      <div id="booking-step-1" class="p-6 space-y-5">
+        <!-- Selected Product Summary or Selector -->
+        <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200">
+          <label class="block text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-1.5">Selected Tyre / Alloy Rim Package</label>
+          <select id="modal-product-select" onchange="handleModalProductChange()" class="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm font-bold text-slate-900 outline-none focus:border-crimson">
+            <!-- Populated dynamically -->
+          </select>
+          <div id="modal-product-meta" class="mt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-600">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <!-- Quantity Selector -->
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Select Quantity</label>
+          <div class="grid grid-cols-4 gap-2.5">
+            <button type="button" onclick="setBookingQty(1)" data-qty="1" class="qty-btn py-2.5 rounded-xl border-2 border-slate-200 text-xs sm:text-sm font-heading font-bold text-slate-700 hover:border-crimson transition-all">1 Unit</button>
+            <button type="button" onclick="setBookingQty(2)" data-qty="2" class="qty-btn py-2.5 rounded-xl border-2 border-slate-200 text-xs sm:text-sm font-heading font-bold text-slate-700 hover:border-crimson transition-all">2 Units</button>
+            <button type="button" onclick="setBookingQty(4)" data-qty="4" class="qty-btn py-2.5 rounded-xl border-2 border-crimson bg-crimson/5 text-xs sm:text-sm font-heading font-bold text-crimson transition-all">4 (Best Value)</button>
+            <button type="button" onclick="setBookingQty(5)" data-qty="5" class="qty-btn py-2.5 rounded-xl border-2 border-slate-200 text-xs sm:text-sm font-heading font-bold text-slate-700 hover:border-crimson transition-all">5 (+Spare)</button>
+          </div>
+        </div>
+
+        <!-- Workshop Add-Ons Toggles -->
+        <div class="space-y-2.5">
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-500">Workshop Calibration &amp; Add-Ons</label>
+          
+          <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+            <div class="flex items-center gap-3">
+              <input id="addon-alignment" type="checkbox" checked onchange="recalculateBookingTotal()" class="w-4 h-4 accent-crimson rounded" />
+              <div>
+                <div class="text-xs sm:text-sm font-bold text-slate-900">3D Computerized Wheel Alignment</div>
+                <div class="text-[11px] text-slate-500">Recommended with new tyre installation</div>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-slate-900 tabular-nums">+Rs. 2,500</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+            <div class="flex items-center gap-3">
+              <input id="addon-balancing" type="checkbox" checked onchange="recalculateBookingTotal()" class="w-4 h-4 accent-crimson rounded" />
+              <div>
+                <div class="text-xs sm:text-sm font-bold text-slate-900">High-Speed Digital Road-Force Balancing</div>
+                <div class="text-[11px] text-emerald-600 font-semibold">FREE when ordering 4 or more tyres!</div>
+              </div>
+            </div>
+            <span id="addon-balancing-price" class="text-xs font-bold text-emerald-600 tabular-nums">FREE</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+            <div class="flex items-center gap-3">
+              <input id="addon-nitrogen" type="checkbox" checked onchange="recalculateBookingTotal()" class="w-4 h-4 accent-crimson rounded" />
+              <div>
+                <div class="text-xs sm:text-sm font-bold text-slate-900">Pure Nitrogen Gas Inflation (99.5% N2)</div>
+                <div class="text-[11px] text-slate-500">Complimentary with every fitting</div>
+              </div>
+            </div>
+            <span class="text-xs font-bold text-emerald-600">FREE</span>
+          </label>
+
+          <label class="flex items-center justify-between p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer">
+            <div class="flex items-center gap-3">
+              <input id="addon-buyback" type="checkbox" onchange="recalculateBookingTotal()" class="w-4 h-4 accent-crimson rounded" />
+              <div>
+                <div class="text-xs sm:text-sm font-bold text-slate-900">Old Tyre Buy-Back Trade-In Estimate</div>
+                <div class="text-[11px] text-slate-500">Estimated Rs. 1,500/tyre credit upon bay inspection</div>
+              </div>
+            </div>
+            <span id="addon-buyback-price" class="text-xs font-bold text-amber-700 tabular-nums">-Rs. 6,000 Est.</span>
+          </label>
+        </div>
+
+        <!-- Live PKR Total Footer -->
+        <div class="pt-3 border-t border-slate-200 flex items-center justify-between gap-4">
+          <div>
+            <div class="text-[11px] font-semibold text-slate-500">Estimated Workshop Total</div>
+            <div id="modal-total-step1" class="font-heading font-extrabold text-xl sm:text-2xl text-slate-900 tabular-nums">Rs. 0</div>
+          </div>
+          <button onclick="goToBookingStep(2)" class="px-6 py-3 rounded-2xl bg-crimson hover:bg-crimson-dark text-white font-heading font-bold text-sm shadow-glow-crimson transition-all">
+            Choose Bay Slot →
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 2: DATE & FITTING BAY TIME SLOT -->
+      <div id="booking-step-2" class="hidden p-6 space-y-5">
+        <div>
+          <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">1. Select Appointment Date</label>
+          <div class="grid grid-cols-3 gap-2.5">
+            <button type="button" onclick="selectBookingDate('Today, Nov 18')" data-date="Today, Nov 18" class="date-btn py-2.5 px-3 rounded-xl border-2 border-crimson bg-crimson/5 text-xs sm:text-sm font-heading font-bold text-crimson">Today, Nov 18</button>
+            <button type="button" onclick="selectBookingDate('Tomorrow, Nov 19')" data-date="Tomorrow, Nov 19" class="date-btn py-2.5 px-3 rounded-xl border-2 border-slate-200 text-xs sm:text-sm font-heading font-bold text-slate-700 hover:border-crimson">Tomorrow, Nov 19</button>
+            <button type="button" onclick="selectBookingDate('Fri, Nov 20')" data-date="Fri, Nov 20" class="date-btn py-2.5 px-3 rounded-xl border-2 border-slate-200 text-xs sm:text-sm font-heading font-bold text-slate-700 hover:border-crimson">Fri, Nov 20</button>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between mb-2">
+            <label class="block text-xs font-bold uppercase tracking-wider text-slate-500">2. Select Belgium Chowk Fitting Bay Slot</label>
+            <span class="text-[11px] font-semibold text-emerald-600">30-Min Express Guaranteed</span>
+          </div>
+          <div id="time-slots-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+            <!-- Time slot pills rendered dynamically -->
+          </div>
+        </div>
+
+        <div class="pt-3 border-t border-slate-200 flex items-center justify-between gap-3">
+          <button onclick="goToBookingStep(1)" class="px-5 py-3 rounded-2xl border border-slate-300 text-slate-700 font-heading font-bold text-sm hover:bg-slate-50">
+            ← Back
+          </button>
+          <button onclick="goToBookingStep(3)" class="px-6 py-3 rounded-2xl bg-crimson hover:bg-crimson-dark text-white font-heading font-bold text-sm shadow-glow-crimson">
+            Enter Vehicle Details →
+          </button>
+        </div>
+      </div>
+
+      <!-- STEP 3: CUSTOMER & VEHICLE DETAILS -->
+      <div id="booking-step-3" class="hidden p-6 space-y-4">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label for="cust-name" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Your Full Name *</label>
+            <input id="cust-name" type="text" placeholder="e.g., Usman Tariq" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm font-semibold text-slate-900 focus:border-crimson outline-none" />
+          </div>
+          <div>
+            <label for="cust-phone" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Mobile / WhatsApp Number *</label>
+            <input id="cust-phone" type="tel" placeholder="e.g., 0300-1234567" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm font-semibold text-slate-900 focus:border-crimson outline-none" />
+          </div>
+        </div>
+
+        <div>
+          <label for="cust-vehicle" class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Vehicle Model &amp; Registration Plate *</label>
+          <input id="cust-vehicle" type="text" placeholder="e.g., Honda Civic Oriel - LEA-24" class="w-full rounded-xl border border-slate-300 px-3.5 py-2.5 text-sm font-semibold text-slate-900 focus:border-crimson outline-none" />
+        </div>
+
+        <!-- Compact Summary Card -->
+        <div class="p-4 rounded-2xl bg-slate-900 text-white text-xs space-y-1.5">
+          <div class="flex justify-between text-slate-400">
+            <span>Selected Package:</span>
+            <span id="summary-item-name" class="text-white font-bold text-right"></span>
+          </div>
+          <div class="flex justify-between text-slate-400">
+            <span>Bay Appointment:</span>
+            <span id="summary-slot-time" class="text-amberGold font-bold"></span>
+          </div>
+          <div class="flex justify-between text-slate-400 pt-1.5 border-t border-white/10">
+            <span>Total Payable at Workshop:</span>
+            <span id="summary-total-pkr" class="text-emerald-400 font-heading font-extrabold text-sm tabular-nums"></span>
+          </div>
+        </div>
+
+        <div class="pt-2 flex items-center justify-between gap-3">
+          <button onclick="goToBookingStep(2)" class="px-5 py-3 rounded-2xl border border-slate-300 text-slate-700 font-heading font-bold text-sm hover:bg-slate-50">
+            ← Back
+          </button>
+          <button onclick="confirmBayBooking()" class="flex-1 py-3 px-6 rounded-2xl bg-crimson hover:bg-crimson-dark text-white font-heading font-bold text-sm shadow-glow-crimson transition-all">
+            Confirm Fitting Bay Reservation
+          </button>
+        </div>
+      </div>
+
+      <!-- CONFIRMATION SCREEN: DIGITAL VIP FITTING PASS -->
+      <div id="booking-confirmation" class="hidden p-6 sm:p-8 space-y-5">
+        <div class="text-center">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 border border-emerald-500/30 text-emerald-600 flex items-center justify-center mx-auto mb-3">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">Synced to Live Workshop Backend</span>
+          <h4 class="font-heading font-extrabold text-2xl text-slate-900 mt-2">Bay Reservation Confirmed!</h4>
+          <p class="text-xs sm:text-sm text-slate-600 mt-1">Show this Digital Pass at Belgium Chowk, 6 Circular Road for priority bay entry.</p>
+        </div>
+
+        <!-- Digital Pass Ticket -->
+        <div class="rounded-3xl bg-obsidian text-white p-5 border border-slate-700 relative overflow-hidden">
+          <div class="flex items-center justify-between border-b border-dashed border-white/20 pb-3.5">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-slate-400">Booking Pass ID</div>
+              <div id="pass-booking-id" class="font-mono font-extrabold text-lg text-crimson">#RYK-2026-894</div>
+            </div>
+            <div class="text-right">
+              <div class="text-[10px] uppercase tracking-widest text-slate-400">Assigned Bay</div>
+              <div id="pass-bay-name" class="font-heading font-bold text-sm text-amberGold">Bay 1 (Express)</div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 gap-3 py-3.5 text-xs">
+            <div>
+              <div class="text-slate-400">Customer &amp; Vehicle</div>
+              <div id="pass-customer" class="font-bold text-white mt-0.5"></div>
+            </div>
+            <div class="text-right">
+              <div class="text-slate-400">Scheduled Time</div>
+              <div id="pass-datetime" class="font-bold text-emerald-400 mt-0.5"></div>
+            </div>
+            <div class="col-span-2 pt-2 border-t border-white/10 flex justify-between items-center">
+              <span id="pass-package" class="text-slate-300 font-medium"></span>
+              <span id="pass-total" class="font-heading font-extrabold text-base text-white tabular-nums"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- WhatsApp & Live Admin Demo Buttons -->
+        <div class="grid sm:grid-cols-2 gap-3">
+          <a
+            id="pass-whatsapp-link"
+            href="https://wa.me/923000630870"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="py-3.5 px-4 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-heading font-bold text-xs sm:text-sm text-center flex items-center justify-center gap-2 shadow-md transition-all"
+          >
+            <span>Send Booking to WhatsApp</span>
+          </a>
+          <button
+            onclick="closeBookingModal(); toggleAdminDrawer(true)"
+            class="py-3.5 px-4 rounded-2xl bg-obsidian hover:bg-slate-800 text-white font-heading font-bold text-xs sm:text-sm flex items-center justify-center gap-2 transition-all"
+          >
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            <span>Inspect in Backend Admin</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- SHOP OWNER BACKEND ADMIN DRAWER (LIVE ARCHITECTURE DEMO)              -->
+  <!-- ===================================================================== -->
+  <div id="admin-drawer-overlay" onclick="toggleAdminDrawer(false)" class="fixed inset-0 z-50 hidden bg-obsidian/70 backdrop-blur-sm transition-opacity"></div>
+  <aside id="admin-drawer" class="fixed top-0 right-0 z-50 h-full w-full max-w-lg bg-slate-950 text-white border-l border-white/10 shadow-2xl transform translate-x-full transition-transform duration-300 flex flex-col">
+    
+    <!-- Drawer Header -->
+    <div class="p-5 bg-obsidian border-b border-white/10 flex items-center justify-between">
+      <div>
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+          <span class="text-[10px] font-bold uppercase tracking-widest text-emerald-400">Live Shop Owner Backend Demo</span>
+        </div>
+        <h3 class="font-heading font-extrabold text-lg text-white mt-0.5">RYK Tyre Center — Bay &amp; Stock OS</h3>
+      </div>
+      <button onclick="toggleAdminDrawer(false)" class="p-2 rounded-xl bg-white/10 hover:bg-white/20 text-slate-300 hover:text-white">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Scrollable Drawer Body -->
+    <div class="flex-1 overflow-y-auto p-5 space-y-6">
+      
+      <!-- Real-Time KPI Summary -->
+      <div class="grid grid-cols-3 gap-3">
+        <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+          <div class="text-[10px] font-semibold uppercase text-slate-400">Today's Bays</div>
+          <div id="admin-kpi-bookings" class="font-heading font-extrabold text-2xl text-white tabular-nums mt-1">3</div>
+          <div class="text-[10px] text-emerald-400 mt-0.5">Live Synced</div>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+          <div class="text-[10px] font-semibold uppercase text-slate-400">Est. Revenue</div>
+          <div id="admin-kpi-revenue" class="font-heading font-extrabold text-lg sm:text-xl text-amberGold tabular-nums mt-1">Rs. 268k</div>
+          <div class="text-[10px] text-slate-400 mt-0.5">Booked Today</div>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10">
+          <div class="text-[10px] font-semibold uppercase text-slate-400">Stock Alerts</div>
+          <div id="admin-kpi-alerts" class="font-heading font-extrabold text-2xl text-crimson tabular-nums mt-1">2</div>
+          <div class="text-[10px] text-rose-300 mt-0.5">Low Sets (&le;4)</div>
+        </div>
+      </div>
+
+      <!-- Live Fitting Bay Schedule Queue -->
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="font-heading font-bold text-sm text-white">Live Fitting Bay Queue (Belgium Chowk)</h4>
+          <span class="text-[11px] text-slate-400">Click status to cycle</span>
+        </div>
+        <div id="admin-bookings-list" class="space-y-2.5">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Live Store Stock Quick-Adjuster -->
+      <div>
+        <div class="flex items-center justify-between mb-3">
+          <h4 class="font-heading font-bold text-sm text-white">Live Inventory Sync (Updates Storefront)</h4>
+          <span class="text-[11px] text-emerald-400">Real-Time State</span>
+        </div>
+        <div id="admin-stock-list" class="space-y-2">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Drawer Footer -->
+    <div class="p-4 bg-obsidian border-t border-white/10 text-[11px] text-slate-400 flex items-center justify-between">
+      <span>Architecture: Full-Stack Booking &amp; Inventory OS</span>
+      <span class="text-white font-bold">HAXEN Demo</span>
+    </div>
+  </aside>
+
+  <!-- ===================================================================== -->
+  <!-- APPLICATION LOGIC & DATA                                              -->
+  <!-- ===================================================================== -->
+  <script>
+    // 1. PAKISTAN VEHICLE OEM FITMENT DATABASE
+    const VEHICLE_DATABASE = {
+      corolla: {
+        name: "Toyota Corolla",
+        variants: [
+          { label: "Altis Grande 1.8 (2017–2026)", size: "205/55 R16", width: "205", profile: "55", rim: "16", psi: "32 PSI Front / 32 PSI Rear", pcd: "5x114.3 • Upsize: 215/50 R17" },
+          { label: "GLi / XLi / Altis 1.6 (2015–2026)", size: "195/65 R15", width: "195", profile: "65", rim: "15", psi: "32 PSI Front / 32 PSI Rear", pcd: "5x100 / 5x114.3 • Upsize: 205/55 R16" }
+        ]
+      },
+      civic: {
+        name: "Honda Civic",
+        variants: [
+          { label: "Civic RS Turbo / XI Gen (2022–2026)", size: "215/50 R17", width: "215", profile: "50", rim: "17", psi: "33 PSI Front / 32 PSI Rear", pcd: "5x114.3 • Performance: 225/45 R18" },
+          { label: "Civic Oriel X / Rebirth (2013–2021)", size: "215/55 R16", width: "215", profile: "55", rim: "16", psi: "32 PSI Front / 32 PSI Rear", pcd: "5x114.3 • Upsize: 215/50 R17" }
+        ]
+      },
+      alto: {
+        name: "Suzuki Alto",
+        variants: [
+          { label: "Alto VXR / VXL AGS (2019–2026)", size: "145/80 R13", width: "145", profile: "80", rim: "13", psi: "33 PSI Front / 33 PSI Rear", pcd: "4x100 • Comfort Upsize: 165/70 R13" },
+          { label: "Alto Japanese JDM Turbo / Works", size: "165/55 R15", width: "165", profile: "55", rim: "15", psi: "34 PSI Front / 32 PSI Rear", pcd: "4x100 • Alloy Spec" }
+        ]
+      },
+      fortuner: {
+        name: "Toyota Fortuner / Hilux Revo",
+        variants: [
+          { label: "Fortuner Sigma 4 / Legender / Revo Rocco", size: "265/60 R18", width: "265", profile: "60", rim: "18", psi: "30 PSI Front / 32 PSI Rear", pcd: "6x139.7 • All-Terrain 4x4" },
+          { label: "Fortuner G / Hilux Revo V (17-inch)", size: "265/65 R17", width: "265", profile: "65", rim: "17", psi: "30 PSI Front / 32 PSI Rear", pcd: "6x139.7 • Highway & Off-Road" }
+        ]
+      },
+      sportage: {
+        name: "Kia Sportage / Hyundai Tucson",
+        variants: [
+          { label: "Sportage AWD / FWD & Tucson GLS/Ultimate", size: "225/55 R18", width: "225", profile: "55", rim: "18", psi: "34 PSI Front / 34 PSI Rear", pcd: "5x114.3 • Touring SUV" },
+          { label: "Sportage Alpha (17-inch Alloy)", size: "225/60 R17", width: "225", profile: "60", rim: "17", psi: "34 PSI Front / 34 PSI Rear", pcd: "5x114.3 • Comfort SUV" }
+        ]
+      },
+      swift: {
+        name: "Suzuki Cultus / Swift",
+        variants: [
+          { label: "New Suzuki Swift GLX CVT (2022–2026)", size: "185/55 R16", width: "185", profile: "55", rim: "16", psi: "33 PSI Front / 30 PSI Rear", pcd: "4x100 • Sport Hatch" },
+          { label: "Suzuki Cultus VXL / AGS (2017–2026)", size: "165/65 R14", width: "165", profile: "65", rim: "14", psi: "32 PSI Front / 32 PSI Rear", pcd: "4x100 • Upsize: 185/60 R14" }
+        ]
+      },
+      mghs: {
+        name: "MG HS / Changan Alsvin",
+        variants: [
+          { label: "MG HS Essence / PHEV (18-inch)", size: "235/50 R18", width: "235", profile: "50", rim: "18", psi: "35 PSI Front / 35 PSI Rear", pcd: "5x112 • Crossover SUV" },
+          { label: "Changan Alsvin Lumiere / Comfort", size: "185/55 R15", width: "185", profile: "55", rim: "15", psi: "32 PSI Front / 32 PSI Rear", pcd: "4x100 • Compact Sedan" }
+        ]
+      }
+    };
+
+    // 2. LIVE IMPORTED TYRE & ALLOY RIM CATALOG DATA
+    const CATALOG_PRODUCTS = [
+      {
+        id: "yoko-bluearth-205",
+        category: "tyre",
+        brand: "Yokohama",
+        model: "BluEarth-GT AE51",
+        size: "205/55 R16",
+        width: "205",
+        profile: "55",
+        rim: "16",
+        ratingIndex: "91V",
+        origin: "Made in Japan",
+        originFlag: "🇯🇵",
+        priceUnit: 24500,
+        priceSet4: 94000,
+        stock: 12,
+        unitLabel: "Tyres",
+        image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=800&q=80",
+        fitNote: "Ideal for Corolla Grande, Civic & Altis",
+        stats: [
+          { label: "Wet Grip", value: 94 },
+          { label: "Quiet Comfort", value: 92 },
+          { label: "Tread Life", value: 89 }
+        ]
+      },
+      {
+        id: "mich-primacy4-215",
+        category: "tyre",
+        brand: "Michelin",
+        model: "Primacy 4+ Acoustic",
+        size: "215/50 R17",
+        width: "215",
+        profile: "50",
+        rim: "17",
+        ratingIndex: "95W",
+        origin: "Germany Spec",
+        originFlag: "🇩🇪",
+        priceUnit: 33500,
+        priceSet4: 128000,
+        stock: 8,
+        unitLabel: "Tyres",
+        image: "https://images.unsplash.com/photo-1603584173870-7f23fdae1b7a?auto=format&fit=crop&w=800&q=80",
+        fitNote: "OEM Upgrade for Honda Civic RS & Oriel",
+        stats: [
+          { label: "Wet Grip", value: 98 },
+          { label: "Quiet Comfort", value: 97 },
+          { label: "Tread Life", value: 95 }
+        ]
+      },
+      {
+        id: "bridge-dueler-265",
+        category: "tyre",
+        brand: "Bridgestone",
+        model: "Dueler H/T 684 II",
+        size: "265/60 R18",
+        width: "265",
+        profile: "60",
+        rim: "18",
+        ratingIndex: "110H",
+        origin: "Made in Thailand",
+        originFlag: "🇹🇭",
+        priceUnit: 46500,
+        priceSet4: 178000,
+        stock: 8,
+        unitLabel: "Tyres",
+        image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&w=800&q=80",
+        fitNote: "Built for Toyota Fortuner, Legender & Revo",
+        stats: [
+          { label: "Wet Grip", value: 91 },
+          { label: "Quiet Comfort", value: 90 },
+          { label: "Tread Life", value: 96 }
+        ]
+      },
+      {
+        id: "dunlop-ec300-145",
+        category: "tyre",
+        brand: "Dunlop",
+        model: "Enasave EC300+ Eco",
+        size: "145/80 R13",
+        width: "145",
+        profile: "80",
+        rim: "13",
+        ratingIndex: "75S",
+        origin: "Made in Japan",
+        originFlag: "🇯🇵",
+        priceUnit: 13200,
+        priceSet4: 50400,
+        stock: 16,
+        unitLabel: "Tyres",
+        image: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=800&q=80",
+        fitNote: "Best Fuel Economy for Suzuki Alto VXR/VXL",
+        stats: [
+          { label: "Wet Grip", value: 87 },
+          { label: "Quiet Comfort", value: 91 },
+          { label: "Tread Life", value: 93 }
+        ]
+      },
+      {
+        id: "conti-uc6-225",
+        category: "tyre",
+        brand: "Continental",
+        model: "UltraContact UC6 SUV",
+        size: "225/55 R18",
+        width: "225",
+        profile: "55",
+        rim: "18",
+        ratingIndex: "98V",
+        origin: "Germany Spec",
+        originFlag: "🇩🇪",
+        priceUnit: 36800,
+        priceSet4: 141000,
+        stock: 6,
+        unitLabel: "Tyres",
+        image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80",
+        fitNote: "Engineered for Kia Sportage & Hyundai Tucson",
+        stats: [
+          { label: "Wet Grip", value: 96 },
+          { label: "Quiet Comfort", value: 95 },
+          { label: "Tread Life", value: 91 }
+        ]
+      },
+      {
+        id: "yoko-advan-185",
+        category: "tyre",
+        brand: "Yokohama",
+        model: "Advan dB V552 Silent",
+        size: "185/55 R16",
+        width: "185",
+        profile: "55",
+        rim: "16",
+        ratingIndex: "83V",
+        origin: "Made in Japan",
+        originFlag: "🇯🇵",
+        priceUnit: 22800,
+        priceSet4: 87600,
+        stock: 10,
+        unitLabel: "Tyres",
+        image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80",
+        fitNote: "Ultra-Quiet Spec for Suzuki Swift GLX & City",
+        stats: [
+          { label: "Wet Grip", value: 93 },
+          { label: "Quiet Comfort", value: 98 },
+          { label: "Tread Life", value: 88 }
+        ]
+      },
+      {
+        id: "rim-bbs-16",
+        category: "Alloy Rims",
+        brand: "Alloy Rims",
+        model: "Vossen HF-5 Flow-Formed 16\"",
+        size: "16x7.0J • 5x114.3",
+        width: "205",
+        profile: "55",
+        rim: "16",
+        ratingIndex: "Matte Gunmetal",
+        origin: "Taiwan Flow-Formed",
+        originFlag: "🇹🇼",
+        priceUnit: 26500,
+        priceSet4: 98000,
+        stock: 4,
+        unitLabel: "Rims (1 Set)",
+        image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80",
+        fitNote: "Fits Corolla Grande, Civic, Elantra & Yaris",
+        stats: [
+          { label: "Forged Strength", value: 95 },
+          { label: "Weight Reduction", value: 92 },
+          { label: "Finish Durability", value: 96 }
+        ]
+      },
+      {
+        id: "rim-forged-18",
+        category: "Alloy Rims",
+        brand: "Alloy Rims",
+        model: "APEX Forged Split-Spoke 18\"",
+        size: "18x8.0J • 5x114.3",
+        width: "225",
+        profile: "55",
+        rim: "18",
+        ratingIndex: "Satin Obsidian",
+        origin: "Japan JWL/VIA Spec",
+        originFlag: "🇯🇵",
+        priceUnit: 38000,
+        priceSet4: 142000,
+        stock: 3,
+        unitLabel: "Rims",
+        image: "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=800&q=80",
+        fitNote: "Fits Civic RS, Sportage, Tucson & Accord",
+        stats: [
+          { label: "Forged Strength", value: 98 },
+          { label: "Weight Reduction", value: 95 },
+          { label: "Finish Durability", value: 97 }
+        ]
+      },
+      {
+        id: "rim-machined-15",
+        category: "Alloy Rims",
+        brand: "Alloy Rims",
+        model: "Enkei RPF-Style Machined 15\"",
+        size: "15x6.5J • 4x100",
+        width: "185",
+        profile: "65",
+        rim: "15",
+        ratingIndex: "Diamond Cut",
+        origin: "Made in Thailand",
+        originFlag: "🇹🇭",
+        priceUnit: 21500,
+        priceSet4: 80000,
+        stock: 8,
+        unitLabel: "Rims (2 Sets)",
+        image: "https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=800&q=80",
+        fitNote: "Fits Honda City, Suzuki Swift, Cultus & Alsvin",
+        stats: [
+          { label: "Forged Strength", value: 92 },
+          { label: "Weight Reduction", value: 94 },
+          { label: "Finish Durability", value: 93 }
+        ]
+      }
+    ];
+
+    // 3. TIME SLOTS FOR BELGIUM CHOWK WORKSHOP
+    const BAY_TIME_SLOTS = [
+      { time: "10:00 AM", bay: "Bay 1", booked: false },
+      { time: "11:30 AM", bay: "Bay 2", booked: false },
+      { time: "01:00 PM", bay: "Bay 1", booked: true },
+      { time: "03:00 PM", bay: "Bay 1", booked: false },
+      { time: "04:30 PM", bay: "Bay 2", booked: false },
+      { time: "06:00 PM", bay: "Bay 1", booked: false },
+      { time: "08:00 PM", bay: "Bay 2", booked: false }
+    ];
+
+    // 4. LIVE SHOP OWNER BACKEND BOOKINGS QUEUE
+    let liveBookings = [
+      {
+        id: "RYK-2026-891",
+        customer: "Tariq Mehmood",
+        vehicle: "Toyota Fortuner - RYK-812",
+        phone: "0300-8671120",
+        package: "4x Bridgestone Dueler 265/60 R18",
+        slot: "Today, 01:00 PM • Bay 1",
+        total: 180500,
+        status: "In Bay 1",
+        isNew: false
+      },
+      {
+        id: "RYK-2026-892",
+        customer: "Dr. Kamran Siddiqui",
+        vehicle: "Honda Civic RS - LEA-904",
+        phone: "0321-6704491",
+        package: "4x Michelin Primacy 4+ 215/50 R17",
+        slot: "Today, 02:15 PM • Bay 2",
+        total: 130500,
+        status: "Confirmed",
+        isNew: false
+      },
+      {
+        id: "RYK-2026-893",
+        customer: "Bilal Hussain",
+        vehicle: "Toyota Corolla Grande - BWP-419",
+        phone: "0301-7752310",
+        package: "4x Yokohama BluEarth-GT 205/55 R16",
+        slot: "Today, 05:15 PM • Bay 1",
+        total: 96500,
+        status: "Confirmed",
+        isNew: false
+      }
+    ];
+
+    // ACTIVE STATE VARIABLES
+    let activeBrandFilter = "all";
+    let activeSizeFilter = null; // e.g., "205/55 R16" or rim diameter
+    let bookingState = {
+      productId: CATALOG_PRODUCTS[0].id,
+      qty: 4,
+      date: "Today, Nov 18",
+      slotTime: "10:00 AM",
+      bayName: "Bay 1",
+      totalPkr: 0
+    };
+
+    // =========================================================================
+    // INITIALIZATION ON WINDOW LOAD
+    // =========================================================================
+    window.addEventListener("DOMContentLoaded", () => {
+      handleCarModelChange(false); // Populate initial vehicle variants without auto-filtering
+      updateSidewallVisualizer();
+      renderCatalog();
+      renderAdminPanel();
+      initScrollRevealAndCounters();
+    });
+
+    // =========================================================================
+    // INTERSECTION OBSERVER SCROLL REVEAL & ANIMATED METRIC COUNTERS
+    // =========================================================================
+    function initScrollRevealAndCounters() {
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-visible");
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+
+      // Animate Hero Metric Counters
+      document.querySelectorAll(".counter").forEach((counterEl) => {
+        const target = parseInt(counterEl.getAttribute("data-target"), 10);
+        const duration = 1400;
+        const startTime = performance.now();
+
+        function updateCounter(now) {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = 1 - Math.pow(1 - progress, 3);
+          counterEl.textContent = Math.round(eased * target);
+          if (progress < 1) requestAnimationFrame(updateCounter);
+        }
+        requestAnimationFrame(updateCounter);
+      });
+    }
+
+    // =========================================================================
+    // NAVBAR MOBILE MENU TOGGLE
+    // =========================================================================
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+
+    // =========================================================================
+    // DUAL-MODE TYRE FINDER LOGIC
+    // =========================================================================
+    function switchFinderMode(mode) {
+      const carTab = document.getElementById("tab-car-mode");
+      const sizeTab = document.getElementById("tab-size-mode");
+      const carPanel = document.getElementById("finder-panel-car");
+      const sizePanel = document.getElementById("finder-panel-size");
+
+      if (mode === "car") {
+        carTab.className = "px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-heading font-bold transition-all duration-200 bg-crimson text-white shadow-md flex items-center gap-2";
+        sizeTab.className = "px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-heading font-bold transition-all duration-200 text-slate-400 hover:text-white flex items-center gap-2";
+        carPanel.classList.remove("hidden");
+        sizePanel.classList.add("hidden");
+      } else {
+        sizeTab.className = "px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-heading font-bold transition-all duration-200 bg-crimson text-white shadow-md flex items-center gap-2";
+        carTab.className = "px-4 sm:px-5 py-2.5 rounded-xl text-xs sm:text-sm font-heading font-bold transition-all duration-200 text-slate-400 hover:text-white flex items-center gap-2";
+        sizePanel.classList.remove("hidden");
+        carPanel.classList.add("hidden");
+      }
+    }
+
+    function handleCarModelChange(autoUpdate = true) {
+      const carKey = document.getElementById("car-model-select").value;
+      const variantSelect = document.getElementById("car-variant-select");
+      const carData = VEHICLE_DATABASE[carKey];
+
+      variantSelect.innerHTML = carData.variants
+        .map((v, idx) => `<option value="${idx}">${v.label}</option>`)
+        .join("");
+
+      handleCarVariantChange();
+    }
+
+    function handleCarVariantChange() {
+      const carKey = document.getElementById("car-model-select").value;
+      const variantIdx = parseInt(document.getElementById("car-variant-select").value, 10) || 0;
+      const variant = VEHICLE_DATABASE[carKey].variants[variantIdx];
+
+      document.getElementById("oem-size-display").textContent = variant.size;
+      document.getElementById("oem-psi-display").textContent = variant.psi;
+      document.getElementById("oem-pcd-display").textContent = variant.pcd;
+      document.getElementById("oem-stock-note").textContent = `${variant.size} In Stock at Belgium Chowk`;
+
+      // Also sync Mode B sidewall visualizer dropdowns so switching tabs feels seamless
+      const widthEl = document.getElementById("size-width");
+      const profileEl = document.getElementById("size-profile");
+      const rimEl = document.getElementById("size-rim");
+      if ([...widthEl.options].some(o => o.value === variant.width)) widthEl.value = variant.width;
+      if ([...profileEl.options].some(o => o.value === variant.profile)) profileEl.value = variant.profile;
+      if ([...rimEl.options].some(o => o.value === variant.rim)) rimEl.value = variant.rim;
+      updateSidewallVisualizer();
+    }
+
+    function applyVehicleFilterAndScroll() {
+      const carKey = document.getElementById("car-model-select").value;
+      const variantIdx = parseInt(document.getElementById("car-variant-select").value, 10) || 0;
+      const variant = VEHICLE_DATABASE[carKey].variants[variantIdx];
+
+      activeBrandFilter = "all";
+      activeSizeFilter = {
+        sizeString: variant.size,
+        rim: variant.rim,
+        label: `${VEHICLE_DATABASE[carKey].name} (${variant.size})`
+      };
+      updateFilterPillsUI();
+      renderCatalog();
+
+      document.getElementById("catalog").scrollIntoView({ behavior: "smooth" });
+    }
+
+    // LIVE SVG TYRE CROSS-SECTION & SIDEWALL VISUALIZER
+    function updateSidewallVisualizer() {
+      const width = parseInt(document.getElementById("size-width").value, 10);
+      const profile = parseInt(document.getElementById("size-profile").value, 10);
+      const rim = parseInt(document.getElementById("size-rim").value, 10);
+
+      // Engineering calculations
+      const sidewallMm = Math.round((width * profile) / 100);
+      const rimMm = Math.round(rim * 25.4);
+      const overallDiameterMm = rimMm + 2 * sidewallMm;
+      const sizeCode = `${width}/${profile} R${rim}`;
+
+      // Update text readouts
+      document.getElementById("vis-stat-width").textContent = `${width} mm`;
+      document.getElementById("vis-stat-sidewall").textContent = `${sidewallMm} mm`;
+      document.getElementById("vis-stat-diameter").textContent = `${overallDiameterMm} mm`;
+      document.getElementById("vis-badge-code").textContent = `${sizeCode} 91V`;
+      document.getElementById("size-search-btn-label").textContent = `Search ${sizeCode} in RYK Stock`;
+
+      // Update SVG visual proportions dynamically
+      const rimRadiusSvg = 44 + (rim - 13) * 3.5; // Scales smoothly from R13 to R18
+      const sidewallThicknessSvg = Math.max(18, Math.min(44, Math.round(sidewallMm / 3.4)));
+      const outerRadiusSvg = Math.min(98, rimRadiusSvg + sidewallThicknessSvg);
+
+      document.getElementById("svg-rim-circle").setAttribute("r", rimRadiusSvg);
+      document.getElementById("svg-rim-inner").setAttribute("r", Math.max(20, rimRadiusSvg - 7));
+      document.getElementById("svg-tyre-outer").setAttribute("r", outerRadiusSvg);
+      document.getElementById("svg-rim-label").textContent = `RIM: ${rim}"`;
+      document.getElementById("svg-sidewall-text").textContent = `${sizeCode} 91V`;
+
+      // Update cross-section rectangle width & labels
+      const crossWidth = Math.max(66, Math.min(116, Math.round(width / 2.2)));
+      const crossX = 76 - Math.round(crossWidth / 2);
+      const crossTyre = document.getElementById("svg-cross-tyre");
+      crossTyre.setAttribute("x", crossX);
+      crossTyre.setAttribute("width", crossWidth);
+
+      const crossRim = document.getElementById("svg-cross-rim");
+      crossRim.setAttribute("x", crossX + 7);
+      crossRim.setAttribute("width", crossWidth - 14);
+
+      document.getElementById("svg-width-label").textContent = `WIDTH: ${width}mm`;
+      document.getElementById("svg-profile-label").textContent = `PROFILE: ${profile}%`;
+      document.getElementById("svg-sidewall-mm-label").textContent = `(${sidewallMm} mm)`;
+    }
+
+    function applySizeFilterAndScroll() {
+      const width = document.getElementById("size-width").value;
+      const profile = document.getElementById("size-profile").value;
+      const rim = document.getElementById("size-rim").value;
+      const sizeStr = `${width}/${profile} R${rim}`;
+
+      activeBrandFilter = "all";
+      activeSizeFilter = {
+        sizeString: sizeStr,
+        rim: rim,
+        label: `Size ${sizeStr} & R${rim} Rims`
+      };
+      updateFilterPillsUI();
+      renderCatalog();
+      document.getElementById("catalog").scrollIntoView({ behavior: "smooth" });
+    }
+
+    // =========================================================================
+    // CATALOG FILTERING & RENDERING
+    // =========================================================================
+    function filterCatalog(brand) {
+      activeBrandFilter = brand;
+      activeSizeFilter = null;
+      updateFilterPillsUI();
+      renderCatalog();
+    }
+
+    function handleSearchInput() {
+      renderCatalog();
+    }
+
+    function resetAllFilters() {
+      activeBrandFilter = "all";
+      activeSizeFilter = null;
+      document.getElementById("catalog-search-input").value = "";
+      updateFilterPillsUI();
+      renderCatalog();
+    }
+
+    function updateFilterPillsUI() {
+      document.querySelectorAll(".filter-pill").forEach((btn) => {
+        const filterVal = btn.getAttribute("data-filter");
+        if (filterVal === activeBrandFilter) {
+          btn.className = "filter-pill active px-4 py-2 rounded-xl text-xs sm:text-sm font-heading font-bold bg-obsidian text-white shadow-sm transition-all";
+        } else {
+          btn.className = "filter-pill px-4 py-2 rounded-xl text-xs sm:text-sm font-heading font-semibold bg-white text-slate-700 border border-slate-200 hover:border-slate-300 transition-all";
+        }
+      });
+
+      const banner = document.getElementById("active-filter-banner");
+      const bannerText = document.getElementById("active-filter-text");
+      if (activeSizeFilter) {
+        banner.classList.remove("hidden");
+        banner.classList.add("inline-flex");
+        bannerText.textContent = `Filtered for: ${activeSizeFilter.label}`;
+      } else {
+        banner.classList.add("hidden");
+        banner.classList.remove("inline-flex");
+      }
+    }
+
+    function formatPKR(num) {
+      return "Rs. " + num.toLocaleString("en-PK");
+    }
+
+    function renderCatalog() {
+      const grid = document.getElementById("product-grid");
+      const searchQuery = document.getElementById("catalog-search-input").value.trim().toLowerCase();
+
+      let filtered = CATALOG_PRODUCTS.filter((item) => {
+        // Brand / Category filter
+        if (activeBrandFilter !== "all" && item.brand !== activeBrandFilter) {
+          return false;
+        }
+        // Vehicle / Size filter
+        if (activeSizeFilter) {
+          const exactSizeMatch = item.size.includes(activeSizeFilter.sizeString);
+          const matchingRimMatch = item.category === "Alloy Rims" && item.rim === activeSizeFilter.rim;
+          const sameRimDiameter = item.rim === activeSizeFilter.rim;
+          if (!exactSizeMatch && !matchingRimMatch && !sameRimDiameter) {
+            return false;
+          }
+        }
+        // Text search
+        if (searchQuery) {
+          const haystack = `${item.brand} ${item.model} ${item.size} ${item.origin} ${item.fitNote}`.toLowerCase();
+          if (!haystack.includes(searchQuery)) return false;
+        }
+        return true;
+      });
+
+      // If size filter yielded 0 exact/rim items, show closest matches gracefully
+      if (filtered.length === 0) {
+        grid.innerHTML = `
+          <div class="col-span-full py-12 px-6 rounded-3xl bg-white border border-slate-200 text-center space-y-3">
+            <div class="font-heading font-bold text-lg text-slate-900">No exact match in current filter</div>
+            <p class="text-sm text-slate-500 max-w-md mx-auto">We stock additional sizes at our Belgium Chowk warehouse or can arrange same-day dispatch. View all available RYK stock below.</p>
+            <button onclick="resetAllFilters()" class="px-5 py-2.5 rounded-xl bg-crimson text-white font-heading font-bold text-xs shadow-glow-crimson">Show All Store Inventory</button>
+          </div>
+        `;
+        return;
+      }
+
+      grid.innerHTML = filtered.map((item) => {
+        const isExactHighlight = activeSizeFilter && item.size.includes(activeSizeFilter.sizeString);
+        const stockBadgeColor = item.stock <= 4
+          ? "bg-amber-50 text-amber-800 border-amber-200"
+          : "bg-emerald-50 text-emerald-700 border-emerald-200";
+
+        return `
+          <article class="group bg-white rounded-3xl border ${isExactHighlight ? "border-crimson ring-2 ring-crimson/20" : "border-slate-200/90"} shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1.5 overflow-hidden flex flex-col">
+            
+            <!-- Product Image Header -->
+            <div class="relative h-52 bg-slate-900 overflow-hidden">
+              <img
+                src="${item.image}"
+                onerror="this.onerror=null; this.src='https://placehold.co/800x540/0F172A/F8FAFC?text=${encodeURIComponent(item.brand + ' ' + item.size)}';"
+                alt="${item.brand} ${item.model}"
+                class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105 opacity-90"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-obsidian/90 via-obsidian/20 to-transparent"></div>
+
+              <!-- Top Badges: Country of Origin & Exact OEM Match -->
+              <div class="absolute top-3.5 inset-x-3.5 flex items-center justify-between gap-2">
+                <span class="px-3 py-1 rounded-full bg-obsidian/85 backdrop-blur-md border border-white/15 text-[11px] font-semibold text-white flex items-center gap-1.5">
+                  <span>${item.originFlag}</span>
+                  <span>${item.origin}</span>
+                </span>
+                ${isExactHighlight ? `<span class="px-2.5 py-1 rounded-full bg-crimson text-white text-[10px] font-bold uppercase tracking-wider shadow-md">Exact OEM Match</span>` : ""}
+              </div>
+
+              <!-- Bottom Overlay: Size Spec & Rating Index -->
+              <div class="absolute bottom-3.5 inset-x-3.5 flex items-end justify-between">
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-crimson">${item.brand}</span>
+                  <h3 class="font-heading font-bold text-lg text-white leading-snug">${item.model}</h3>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-white/15 backdrop-blur-md border border-white/20 font-mono text-xs font-bold text-white tabular-nums">
+                  ${item.size}
+                </span>
+              </div>
+            </div>
+
+            <!-- Card Body -->
+            <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+              <div>
+                <!-- Fitment Compatibility & Live Stock Pill -->
+                <div class="flex items-center justify-between gap-2 mb-4">
+                  <span class="text-xs text-slate-500 font-medium truncate">${item.fitNote}</span>
+                  <span class="shrink-0 px-2.5 py-0.5 rounded-full border text-[11px] font-bold tabular-nums ${stockBadgeColor}">
+                    ${item.stock} ${item.unitLabel}
+                  </span>
+                </div>
+
+                <!-- Animated Performance Telemetry Bars -->
+                <div class="space-y-2.5 bg-slate-50 p-3.5 rounded-2xl border border-slate-100">
+                  ${item.stats.map((st) => `
+                    <div>
+                      <div class="flex justify-between text-[11px] font-semibold mb-1">
+                        <span class="text-slate-600">${st.label}</span>
+                        <span class="text-slate-900 tabular-nums">${st.value}%</span>
+                      </div>
+                      <div class="h-1.5 w-full bg-slate-200 rounded-full overflow-hidden">
+                        <div class="perf-bar-fill h-full rounded-full ${item.category === "Alloy Rims" ? "bg-amberGold" : "bg-crimson"}" style="width: ${st.value}%"></div>
+                      </div>
+                    </div>
+                  `).join("")}
+                </div>
+              </div>
+
+              <!-- Transparent PKR Pricing & CTA -->
+              <div class="pt-3 border-t border-slate-100 space-y-3">
+                <div class="flex items-baseline justify-between">
+                  <div>
+                    <div class="text-[11px] text-slate-400 font-semibold">Per ${item.category === "Alloy Rims" ? "Rim" : "Tyre"}</div>
+                    <div class="font-heading font-extrabold text-lg text-slate-900 tabular-nums">${formatPKR(item.priceUnit)}</div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-[11px] text-emerald-600 font-bold">Set of 4 Deal</div>
+                    <div class="font-heading font-extrabold text-base text-emerald-700 tabular-nums">${formatPKR(item.priceSet4)}</div>
+                  </div>
+                </div>
+
+                <button
+                  onclick="openBookingModal('${item.id}')"
+                  class="w-full py-3 px-4 rounded-2xl bg-obsidian hover:bg-crimson text-white font-heading font-bold text-xs sm:text-sm transition-colors duration-200 flex items-center justify-center gap-2 shadow-sm"
+                >
+                  <span>Select &amp; Book Fitting</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                </button>
+              </div>
+            </div>
+
+          </article>
+        `;
+      }).join("");
+    }
+
+    // =========================================================================
+    // INTERACTIVE FITTING SLOT & BAY RESERVATION MODAL
+    // =========================================================================
+    function openBookingModal(productId) {
+      const modal = document.getElementById("booking-modal");
+      const productSelect = document.getElementById("modal-product-select");
+
+      // Populate product options
+      productSelect.innerHTML = CATALOG_PRODUCTS.map((p) =>
+        `<option value="${p.id}">${p.brand} ${p.model} (${p.size}) — ${formatPKR(p.priceUnit)}/unit</option>`
+      ).join("") + `<option value="service-only">Workshop Service Only (3D Alignment / Balancing / Nitrogen)</option>`;
+
+      if (productId) {
+        productSelect.value = productId;
+        bookingState.productId = productId;
+      } else {
+        bookingState.productId = CATALOG_PRODUCTS[0].id;
+        productSelect.value = bookingState.productId;
+      }
+
+      bookingState.qty = 4;
+      setBookingQty(4);
+      renderTimeSlots();
+      goToBookingStep(1);
+
+      // Show modal & hide confirmation screen
+      document.getElementById("booking-confirmation").classList.add("hidden");
+      document.getElementById("booking-steps-bar").classList.remove("hidden");
+      modal.classList.remove("hidden");
+      modal.classList.add("flex");
+    }
+
+    function closeBookingModal() {
+      const modal = document.getElementById("booking-modal");
+      modal.classList.add("hidden");
+      modal.classList.remove("flex");
+      hideModalAlert();
+    }
+
+    function showModalAlert(msg) {
+      const alertBox = document.getElementById("modal-inline-alert");
+      alertBox.textContent = msg;
+      alertBox.classList.remove("hidden");
+    }
+
+    function hideModalAlert() {
+      document.getElementById("modal-inline-alert").classList.add("hidden");
+    }
+
+    function handleModalProductChange() {
+      bookingState.productId = document.getElementById("modal-product-select").value;
+      recalculateBookingTotal();
+    }
+
+    function setBookingQty(qty) {
+      bookingState.qty = qty;
+      document.querySelectorAll(".qty-btn").forEach((btn) => {
+        const val = parseInt(btn.getAttribute("data-qty"), 10);
+        if (val === qty) {
+          btn.className = "qty-btn py-2.5 rounded-xl border-2 border-crimson bg-crimson/5 text-xs sm:text-sm font-heading font-bold text-crimson transition-all";
+        } else {
+          btn.className = "qty-btn py-2.5 rounded-xl border-2 border-slate-200 text-xs sm:text-sm font-heading font-bold text-slate-700 hover:border-crimson transition-all";
+        }
+      });
+      recalculateBookingTotal();
+    }
+
+    function recalculateBookingTotal() {
+      const selectedId = document.getElementById("modal-product-select").value;
+      const product = CATALOG_PRODUCTS.find((p) => p.id === selectedId);
+      const qty = bookingState.qty;
+
+      const metaDiv = document.getElementById("modal-product-meta");
+      let baseTotal = 0;
+
+      if (product) {
+        if (qty === 4) {
+          baseTotal = product.priceSet4;
+          const savings = product.priceUnit * 4 - product.priceSet4;
+          metaDiv.innerHTML = `<span>${product.originFlag} ${product.origin} • ${product.stock} in stock</span><span class="text-emerald-600 font-bold">Set of 4 Discount Applied (Save ${formatPKR(savings)})</span>`;
+        } else {
+          baseTotal = product.priceUnit * qty;
+          metaDiv.innerHTML = `<span>${product.originFlag} ${product.origin} • ${product.stock} in stock</span><span>${qty} × ${formatPKR(product.priceUnit)}</span>`;
+        }
+      } else {
+        metaDiv.innerHTML = `<span>Belgium Chowk Calibration Bay</span><span>Service Appointment</span>`;
+      }
+
+      // Add-ons calculation
+      const hasAlignment = document.getElementById("addon-alignment").checked;
+      const hasBalancing = document.getElementById("addon-balancing").checked;
+      const hasBuyback = document.getElementById("addon-buyback").checked;
+
+      const alignmentCost = hasAlignment ? 2500 : 0;
+      const balancingFree = qty >= 4 && product;
+      const balancingCost = hasBalancing ? (balancingFree ? 0 : 1200) : 0;
+      const buybackCredit = hasBuyback && product ? qty * 1500 : 0;
+
+      document.getElementById("addon-balancing-price").textContent = balancingFree ? "FREE" : "+Rs. 1,200";
+      document.getElementById("addon-balancing-price").className = balancingFree
+        ? "text-xs font-bold text-emerald-600 tabular-nums"
+        : "text-xs font-bold text-slate-900 tabular-nums";
+
+      document.getElementById("addon-buyback-price").textContent = product ? `-Rs. ${(qty * 1500).toLocaleString("en-PK")} Est.` : "N/A";
+
+      const grandTotal = Math.max(0, baseTotal + alignmentCost + balancingCost - buybackCredit);
+      bookingState.totalPkr = grandTotal;
+      document.getElementById("modal-total-step1").textContent = formatPKR(grandTotal);
+    }
+
+    function selectBookingDate(dateStr) {
+      bookingState.date = dateStr;
+      document.querySelectorAll(".date-btn").forEach((btn) => {
+        if (btn.getAttribute("data-date") === dateStr) {
+          btn.className = "date-btn py-2.5 px-3 rounded-xl border-2 border-crimson bg-crimson/5 text-xs sm:text-sm font-heading font-bold text-crimson";
+        } else {
+          btn.className = "date-btn py-2.5 px-3 rounded-xl border-2 border-slate-200 text-xs sm:text-sm font-heading font-bold text-slate-700 hover:border-crimson";
+        }
+      });
+    }
+
+    function renderTimeSlots() {
+      const container = document.getElementById("time-slots-grid");
+      container.innerHTML = BAY_TIME_SLOTS.map((slot, idx) => {
+        const isSelected = bookingState.slotTime === slot.time && !slot.booked;
+        if (slot.booked) {
+          return `
+            <button
+              type="button"
+              onclick="handleBookedSlotClick(this, '${slot.time}')"
+              class="py-3 px-3 rounded-xl border border-slate-200 bg-slate-100 text-slate-400 text-xs font-semibold flex flex-col items-center justify-center cursor-not-allowed"
+            >
+              <span class="line-through">${slot.time}</span>
+              <span class="text-[10px] text-rose-500 font-bold mt-0.5">Booked</span>
+            </button>
+          `;
+        }
+        return `
+          <button
+            type="button"
+            onclick="selectTimeSlot('${slot.time}', '${slot.bay}')"
+            class="py-3 px-3 rounded-xl border-2 ${isSelected ? "border-crimson bg-crimson/5 text-crimson" : "border-slate-200 bg-white text-slate-800 hover:border-crimson"} text-xs font-heading font-bold flex flex-col items-center justify-center transition-all"
+          >
+            <span>${slot.time}</span>
+            <span class="text-[10px] ${isSelected ? "text-crimson" : "text-emerald-600"} font-semibold mt-0.5">${slot.bay} • Open</span>
+          </button>
+        `;
+      }).join("");
+    }
+
+    function handleBookedSlotClick(btnEl, timeStr) {
+      btnEl.classList.remove("animate-shake");
+      void btnEl.offsetWidth;
+      btnEl.classList.add("animate-shake");
+      showModalAlert(`${timeStr} is already reserved at Belgium Chowk. Please choose an open bay slot.`);
+    }
+
+    function selectTimeSlot(time, bay) {
+      hideModalAlert();
+      bookingState.slotTime = time;
+      bookingState.bayName = bay;
+      renderTimeSlots();
+    }
+
+    function goToBookingStep(step) {
+      hideModalAlert();
+      document.getElementById("booking-step-1").classList.add("hidden");
+      document.getElementById("booking-step-2").classList.add("hidden");
+      document.getElementById("booking-step-3").classList.add("hidden");
+
+      document.getElementById(`booking-step-${step}`).classList.remove("hidden");
+
+      // Update step indicators
+      [1, 2, 3].forEach((num) => {
+        const ind = document.getElementById(`step-indicator-${num}`);
+        const badge = ind.querySelector("span");
+        if (num <= step) {
+          ind.className = "flex items-center gap-2 text-crimson";
+          badge.className = "w-6 h-6 rounded-full bg-crimson text-white flex items-center justify-center text-[11px]";
+        } else {
+          ind.className = "flex items-center gap-2 text-slate-400";
+          badge.className = "w-6 h-6 rounded-full bg-slate-200 text-slate-600 flex items-center justify-center text-[11px]";
+        }
+      });
+
+      if (step === 3) {
+        const selectedId = document.getElementById("modal-product-select").value;
+        const product = CATALOG_PRODUCTS.find((p) => p.id === selectedId);
+        const pkgLabel = product
+          ? `${bookingState.qty}x ${product.brand} ${product.model} (${product.size})`
+          : "3D Alignment & Balancing Service";
+
+        document.getElementById("summary-item-name").textContent = pkgLabel;
+        document.getElementById("summary-slot-time").textContent = `${bookingState.date} at ${bookingState.slotTime} (${bookingState.bayName})`;
+        document.getElementById("summary-total-pkr").textContent = formatPKR(bookingState.totalPkr);
+      }
+    }
+
+    function confirmBayBooking() {
+      const name = document.getElementById("cust-name").value.trim();
+      const phone = document.getElementById("cust-phone").value.trim();
+      const vehicle = document.getElementById("cust-vehicle").value.trim();
+
+      if (!name || !phone || !vehicle) {
+        showModalAlert("Please fill in your Name, Phone Number, and Vehicle Model/Plate to confirm your bay reservation.");
+        return;
+      }
+
+      hideModalAlert();
+      const bookingId = `RYK-2026-${Math.floor(894 + Math.random() * 100)}`;
+      const selectedId = document.getElementById("modal-product-select").value;
+      const product = CATALOG_PRODUCTS.find((p) => p.id === selectedId);
+      const pkgLabel = product
+        ? `${bookingState.qty}x ${product.brand} ${product.model} (${product.size})`
+        : "3D Alignment & Calibration Service";
+
+      // Deduct stock in live demo state
+      if (product) {
+        product.stock = Math.max(0, product.stock - bookingState.qty);
+        renderCatalog();
+      }
+
+      // Mark chosen slot as booked
+      const slotObj = BAY_TIME_SLOTS.find((s) => s.time === bookingState.slotTime);
+      if (slotObj) slotObj.booked = true;
+
+      // Push into live Shop Owner Backend Queue
+      liveBookings.unshift({
+        id: bookingId,
+        customer: name,
+        vehicle: vehicle,
+        phone: phone,
+        package: pkgLabel,
+        slot: `${bookingState.date}, ${bookingState.slotTime} • ${bookingState.bayName}`,
+        total: bookingState.totalPkr,
+        status: "Confirmed",
+        isNew: true
+      });
+
+      renderAdminPanel();
+
+      // Populate Digital VIP Fitting Pass
+      document.getElementById("pass-booking-id").textContent = `#${bookingId}`;
+      document.getElementById("pass-bay-name").textContent = `${bookingState.bayName} (Express)`;
+      document.getElementById("pass-customer").textContent = `${name} (${vehicle})`;
+      document.getElementById("pass-datetime").textContent = `${bookingState.date} • ${bookingState.slotTime}`;
+      document.getElementById("pass-package").textContent = pkgLabel;
+      document.getElementById("pass-total").textContent = formatPKR(bookingState.totalPkr);
+
+      // Build formatted WhatsApp summary link
+      const waMessage =
+        `Assalam-o-Alaikum RAHIM YAR KHAN TYRE CENTER!%0A` +
+        `I have booked a Fitting Bay Slot online:%0A` +
+        `• Booking ID: #${bookingId}%0A` +
+        `• Name: ${encodeURIComponent(name)}%0A` +
+        `• Vehicle: ${encodeURIComponent(vehicle)}%0A` +
+        `• Package: ${encodeURIComponent(pkgLabel)}%0A` +
+        `• Slot: ${encodeURIComponent(bookingState.date + " at " + bookingState.slotTime + " (" + bookingState.bayName + ")")}%0A` +
+        `• Est. Total: ${encodeURIComponent(formatPKR(bookingState.totalPkr))}`;
+
+      document.getElementById("pass-whatsapp-link").href = `https://wa.me/923000630870?text=${waMessage}`;
+
+      // Switch modal view to Confirmation Pass
+      document.getElementById("booking-steps-bar").classList.add("hidden");
+      document.getElementById("booking-step-3").classList.add("hidden");
+      document.getElementById("booking-confirmation").classList.remove("hidden");
+    }
+
+    // =========================================================================
+    // SHOP OWNER BACKEND ADMIN DRAWER LOGIC
+    // =========================================================================
+    function toggleAdminDrawer(open) {
+      const overlay = document.getElementById("admin-drawer-overlay");
+      const drawer = document.getElementById("admin-drawer");
+
+      if (open) {
+        renderAdminPanel();
+        overlay.classList.remove("hidden");
+        requestAnimationFrame(() => {
+          drawer.classList.remove("translate-x-full");
+        });
+      } else {
+        drawer.classList.add("translate-x-full");
+        setTimeout(() => {
+          overlay.classList.add("hidden");
+        }, 300);
+      }
+    }
+
+    function cycleBookingStatus(index) {
+      const statuses = ["Confirmed", "In Bay 1", "Completed"];
+      const current = liveBookings[index].status;
+      const next = statuses[(statuses.indexOf(current) + 1) % statuses.length];
+      liveBookings[index].status = next;
+      liveBookings[index].isNew = false;
+      renderAdminPanel();
+    }
+
+    function adjustProductStock(productId, delta) {
+      const product = CATALOG_PRODUCTS.find((p) => p.id === productId);
+      if (!product) return;
+      product.stock = Math.max(0, product.stock + delta);
+      renderAdminPanel();
+      renderCatalog();
+    }
+
+    function renderAdminPanel() {
+      // Update navbar pill badge & KPI cards
+      document.getElementById("admin-badge-count").textContent = liveBookings.length;
+      document.getElementById("admin-kpi-bookings").textContent = liveBookings.length;
+
+      const totalRev = liveBookings.reduce((sum, b) => sum + b.total, 0);
+      document.getElementById("admin-kpi-revenue").textContent = `Rs. ${Math.round(totalRev / 1000)}k`;
+
+      const lowStockCount = CATALOG_PRODUCTS.filter((p) => p.stock <= 4).length;
+      document.getElementById("admin-kpi-alerts").textContent = lowStockCount;
+
+      // Render Bookings Queue
+      const bookingsList = document.getElementById("admin-bookings-list");
+      bookingsList.innerHTML = liveBookings.map((b, idx) => {
+        const statusStyles =
+          b.status === "Completed"
+            ? "bg-emerald-500/20 text-emerald-300 border-emerald-500/40"
+            : b.status === "In Bay 1"
+            ? "bg-amberGold/20 text-amber-300 border-amberGold/40"
+            : "bg-sky-500/20 text-sky-300 border-sky-500/40";
+
+        return `
+          <div class="p-3.5 rounded-2xl bg-white/5 border ${b.isNew ? "border-emerald-400/60" : "border-white/10"} space-y-2">
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2">
+                <span class="font-mono text-xs font-bold text-crimson">#${b.id}</span>
+                ${b.isNew ? `<span class="px-2 py-0.5 rounded-full bg-emerald-500 text-obsidian text-[9px] font-extrabold uppercase">New Live Booking</span>` : ""}
+              </div>
+              <button onclick="cycleBookingStatus(${idx})" class="px-2.5 py-1 rounded-lg border text-[10px] font-bold ${statusStyles} hover:opacity-80 transition-opacity">
+                ${b.status} ↻
+              </button>
+            </div>
+            <div class="text-xs font-bold text-white">${b.customer} • <span class="text-slate-300 font-medium">${b.vehicle}</span></div>
+            <div class="text-[11px] text-slate-400">${b.package}</div>
+            <div class="flex items-center justify-between pt-1.5 border-t border-white/10 text-[11px]">
+              <span class="text-amberGold font-semibold">${b.slot}</span>
+              <span class="font-bold text-white tabular-nums">${formatPKR(b.total)}</span>
+            </div>
+          </div>
+        `;
+      }).join("");
+
+      // Render Live Inventory Stock Adjuster
+      const stockList = document.getElementById("admin-stock-list");
+      stockList.innerHTML = CATALOG_PRODUCTS.map((p) => `
+        <div class="p-3 rounded-xl bg-white/[0.03] border border-white/10 flex items-center justify-between gap-3 text-xs">
+          <div class="min-w-0">
+            <div class="font-bold text-white truncate">${p.brand} ${p.model}</div>
+            <div class="text-[11px] text-slate-400">${p.size} • ${formatPKR(p.priceUnit)}</div>
+          </div>
+          <div class="flex items-center gap-2 shrink-0">
+            <button onclick="adjustProductStock('${p.id}', -1)" class="w-7 h-7 rounded-lg bg-white/10 hover:bg-crimson text-white font-bold transition-colors">-</button>
+            <span class="w-8 text-center font-mono font-bold ${p.stock <= 4 ? "text-amberGold" : "text-emerald-400"} tabular-nums">${p.stock}</span>
+            <button onclick="adjustProductStock('${p.id}', 1)" class="w-7 h-7 rounded-lg bg-white/10 hover:bg-emerald-600 text-white font-bold transition-colors">+</button>
+          </div>
+        </div>
+      `).join("");
+    }
+  </script>
+</body>
+</html>
